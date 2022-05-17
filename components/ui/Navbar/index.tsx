@@ -14,6 +14,7 @@ interface props {
 }
 const NavMobile: React.FC<props> = ({ active, t, lang }) => {
   const { pathname } = useRouter();
+
   return (
     <div
       className={clsx(
@@ -81,7 +82,7 @@ interface propsNavbar {
 export const Navbar: React.FC<propsNavbar> = ({ logo }) => {
   const { pathname } = useRouter();
   const { t, lang } = useTranslation("nav");
-  console.log(pathname)
+  console.log(pathname=='/about')
   const [active, setActive] = useState<boolean>(false);
   return (
     <nav className="nav ltr bg-primary-bg ">
