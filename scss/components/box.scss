@@ -1,0 +1,20 @@
+.box-service-animation {
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+.box-service-animation::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-height: 0px;
+  height: 100%;
+  background-color: $secondaryColor;
+  transition: all 0.2s ease;
+}
+.box-service-animation:hover::after {
+  max-height: 5px;
+}

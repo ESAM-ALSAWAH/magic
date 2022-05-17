@@ -1,0 +1,49 @@
+.animation-button {
+  position: relative;
+  overflow: hidden;
+}
+.animation-button::after {
+  content: "";
+  position: absolute;
+  height: 200%;
+  width: 3px;
+  background: $ColorLight;
+  top: -10px;
+  left: -20px;
+  transform: rotate(25deg);
+  transition: all 0.3s ease;
+}
+.animation-button:hover::after {
+  transition: all 0.3s ease;
+  left: 100%;
+}
+
+.zoom-div {
+  overflow: hidden;
+}
+.zoom-image {
+  transition: all 0.3s ease;
+}
+.zoom-image:hover {
+  transform: scale(1.1);
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  max-width: 350px;
+  min-width: 0px;
+  width: 100%;
+  height: 235px;
+}
+.bounce{
+  animation: bounce-animate .5s linear alternate infinite;
+}
+@keyframes bounce-animate  {
+  from {
+    transform: translateY(0)  rotate(-45deg);
+  }
+  to{
+    transform: translateY(5px) translateX(5PX) rotate(-45deg);
+  }
+}

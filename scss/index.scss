@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "base/variable";
+@import "base/shared";
+@import "components/nav.scss";
+@import "components/box.scss";
+body{
+  overflow-x: hidden !important;
+}
+.ltr {
+  direction: ltr;
+}
+.rtl {
+  direction: rtl;
+}
+.titlePage {
+  color: $primaryColor;
+  text-shadow: 1px 1px 1px $primaryColor;
+  font-weight: 700;
+}
+@layer base {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply text-base;
+  }
+  h1 {
+    @apply lg:text-7xl md:text-6xl sm:text-5xl xs:text-4xl;
+  }
+  h2 {
+    @apply lg:text-6xl md:text-5xl sm:text-4xl xs:text-3xl;
+  }
+  h3 {
+    @apply lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl;
+  }
+  h4 {
+    @apply lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl;
+  }
+  h5 {
+    @apply lg:text-3xl md:text-2xl sm:text-xl xs:text-lg;
+  }
+  h6 {
+    @apply lg:text-2xl md:text-xl sm:text-lg xs:text-base;
+  }
+  p {
+    @apply lg:text-lg md:text-base sm:text-sm xs:text-xs;
+  }
+  label {
+    @apply lg:text-base md:text-sm sm:text-xs;
+  }
+}

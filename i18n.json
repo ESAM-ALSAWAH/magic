@@ -1,0 +1,11 @@
+{
+  "locales": ["en", "ar"],
+  "defaultLocale": "en",
+  "pages": {
+    "*": ["nav"],
+    "/404": ["404"],
+    "/about":["about_us"],
+    "/group/specialone": ["specialone"],
+    "/group/realestate": ["realestate"]
+  }
+}

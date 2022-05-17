@@ -1,0 +1,42 @@
+nav .contact-link {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  border: 1px solid $ColorLight;
+  padding: 5px 12px;
+}
+nav .contact-link::after {
+  content: "";
+  position: absolute;
+  height: 200%;
+  width: 3px;
+  background: $ColorLight;
+  top: -10px;
+  left: -20px;
+  transform: rotate(25deg);
+  transition: all 0.3s ease;
+}
+nav .contact-link:hover::after {
+  transition: all 0.3s ease;
+  left: 100%;
+}
+.mobile-nav {
+  padding-top: 0.9rem;
+  min-width: 250px;
+  transition: all 0.2s ease;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.mobile-nav.hide {
+  transform: translateX(-250px);
+}
+.menuIconActive {
+  transition: all 0.2s ease;
+}
+.menuIconActive span:nth-child(2) {
+  width: 15px;
+  transition: all 0.2s ease;
+}
+.menuIconActive span:nth-child(3) {
+  width: 10px;
+  transition: all 0.2s ease;
+}
