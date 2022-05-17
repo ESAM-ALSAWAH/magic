@@ -28,18 +28,19 @@ export const DynamicSection: React.FC<props> = ({
           lang === "ar" && "-left-20 right-auto"
         )}
         style={{ zIndex: -1 }}
+        loading="lazy"
       />
       <div className="container flex flex-col md:flex-row md:justify-between my-10 px-4 gap-20 z-50">
         <div className="flex flex-row items-center gap-x-10 min-w-w-[200px] flex-1">
           <div className="max-w-[250px] w-[100%]">
-            <img src={images[0]} width="100%" />
+            <img src={images[0]} width="100%" loading="lazy" />
           </div>
           <div className="flex flex-col gap-y-4">
             <div className="max-w-[250px] w-[100%]">
-              <img src={images[1]} width="100%" />
+              <img src={images[1]} width="100%" loading="lazy" />
             </div>
             <div className="max-w-[250px] w-[100%]">
-              <img src={images[2]} width="100%" />
+              <img src={images[2]} width="100%" loading="lazy"/>
             </div>
           </div>
         </div>

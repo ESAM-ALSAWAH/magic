@@ -16,7 +16,7 @@ export const Why_us: React.FC<props> = ({ title, title2, image, children }) => {
         {children}
       </div>
       <div className="max-w-[500px] w-[100%] overflow-hidden">
-        <img src={image} alt="" width={"100%"} />
+        <img src={image} alt="" width={"100%"} loading="lazy"/>
       </div>
     </div>
   );

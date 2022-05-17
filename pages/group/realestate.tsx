@@ -60,6 +60,7 @@ const Realestate: NextPage = () => {
                 <div className="flex flex-col gap-y-4 max-w-[300px] w-[100%] zoom-div ">
                     <div className="image-container">
                         <Image
+                        loading="lazy"
                             src="/images/realestate/1.png"
                             alt="image"
                             layout="fill"
@@ -72,6 +73,7 @@ const Realestate: NextPage = () => {
                 <div className="flex flex-col gap-y-4 max-w-[300px] w-[100%] zoom-div">
                     <div className="image-container">
                         <Image
+                             loading="lazy"
                             src="/images/realestate/2.png"
                             alt="image"
                             layout="fill"
@@ -83,6 +85,7 @@ const Realestate: NextPage = () => {
                 <div className="flex flex-col gap-y-4 max-w-[300px] w-[100%] zoom-div">
                     <div className="image-container">
                         <Image
+                        loading="lazy"
                             src="/images/realestate/3.png"
                             alt="image"
                             layout="fill"

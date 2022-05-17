@@ -81,7 +81,7 @@ interface propsNavbar {
 export const Navbar: React.FC<propsNavbar> = ({ logo }) => {
   const { pathname } = useRouter();
   const { t, lang } = useTranslation("nav");
-
+  console.log(pathname)
   const [active, setActive] = useState<boolean>(false);
   return (
     <nav className="nav ltr bg-primary-bg ">
@@ -125,10 +125,7 @@ export const Navbar: React.FC<propsNavbar> = ({ logo }) => {
               {t('contact')}
             </a>
           </Link>
-
         </div>
-
-
         <div className="hidden sm:block">
           <Dropdown t={t} lang={lang} />
         </div>

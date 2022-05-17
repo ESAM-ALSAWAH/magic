@@ -45,6 +45,7 @@ export const DynamicHero: React.FC<props> = ({
               width: "100%",
               height: "100%",
             }}
+            loading="lazy"
           />
         </div>
         <div className="flex flex-row gap-x-4">
@@ -55,10 +56,11 @@ export const DynamicHero: React.FC<props> = ({
                 width: "100%",
                 height: "100%",
               }}
+              loading="lazy"
             />
           </div>
           <div className="max-w-[145px] max-h-[145px] w-[100%] h-[100%]">
-            <img src={images[2]} width="100%" />
+            <img src={images[2]} width="100%" loading="lazy" />
           </div>
         </div>
       </div>
