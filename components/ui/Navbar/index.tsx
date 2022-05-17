@@ -32,7 +32,7 @@ const NavMobile: React.FC<props> = ({ active, t, lang }) => {
           <a
             className={clsx(
               "text-primary-text w-[fit-content] p-1 capitalize",
-              pathname === '/' && "text-secondary-bg"
+              pathname == '/' && "text-secondary-bg"
             )}
           >
             {t('home')}
@@ -42,7 +42,7 @@ const NavMobile: React.FC<props> = ({ active, t, lang }) => {
           <a
             className={clsx(
               "text-primary-text w-[fit-content] p-1 capitalize",
-              pathname === '/about' && "text-secondary-bg"
+              pathname == '/about' && "text-secondary-bg"
             )}
           >
             {t('about')}
@@ -53,7 +53,7 @@ const NavMobile: React.FC<props> = ({ active, t, lang }) => {
           <a
             className={clsx(
               "text-primary-text w-[fit-content] p-1 capitalize",
-              pathname === '/contact' && "text-secondary-bg"
+              pathname == '/contact' && "text-secondary-bg"
             )}
           >
             {t('contact')}
@@ -98,7 +98,7 @@ export const Navbar: React.FC<propsNavbar> = ({ logo }) => {
             <a
               className={clsx(
                 "text-primary-text w-[fit-content] p-1 capitalize",
-                pathname === '/' && "text-secondary-bg"
+                pathname == '/' && "text-secondary-bg"
               )}
             >
               {t('home')}
@@ -108,7 +108,7 @@ export const Navbar: React.FC<propsNavbar> = ({ logo }) => {
             <a
               className={clsx(
                 "text-primary-text w-[fit-content] p-1 capitalize",
-                pathname === '/about' && "text-secondary-bg"
+                pathname =='/about' && "text-secondary-bg"
               )}
             >
               {t('about')}
@@ -119,7 +119,7 @@ export const Navbar: React.FC<propsNavbar> = ({ logo }) => {
             <a
               className={clsx(
                 "text-primary-text w-[fit-content] p-1 capitalize",
-                pathname === '/contact' && "text-secondary-bg"
+                pathname == '/contact' && "text-secondary-bg"
               )}
             >
               {t('contact')}
