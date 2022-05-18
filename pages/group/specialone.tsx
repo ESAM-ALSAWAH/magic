@@ -1,11 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Navbar } from "@ui";
+import { Navbar, Footer } from "@ui";
 import {
   Contact_us,
   DynamicSection,
   Why_us,
-
   MiniCard,
   DynamicHero,
 } from "@components";
@@ -50,7 +49,12 @@ const Specialone: NextPage = () => {
         </h4>
         <div className="flex flex-wrap flex-row justify-center gap-y-10 gap-x-4 px-4 my-20">
           {Sparkling_services?.map((item: any, index: number) => (
-            <MiniCard key={index} icon={item.icon} title={t(item.title)} />
+            <MiniCard
+              key={index}
+              icon={item.icon}
+              title={t(item.title)}
+              index={index}
+            />
           ))}
         </div>
       </div>
@@ -69,7 +73,12 @@ const Specialone: NextPage = () => {
         </h4>
         <div className="flex flex-wrap flex-row justify-center gap-y-10 gap-x-4 px-4 my-20">
           {Premium_Services?.map((item: any, index: number) => (
-            <MiniCard key={index} icon={item.icon} title={t(item.title)} />
+            <MiniCard
+              key={index}
+              icon={item.icon}
+              title={t(item.title)}
+              index={index}
+            />
           ))}
         </div>
       </div>
@@ -91,6 +100,7 @@ const Specialone: NextPage = () => {
         <p>{t("why_description")}</p>
       </Why_us>
       <Contact_us t={t} />
+      <Footer logo="/images/special_one_logo.svg" />
     </>
   );
 };

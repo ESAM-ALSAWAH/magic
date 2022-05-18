@@ -5,8 +5,17 @@
 @import "base/shared";
 @import "components/nav.scss";
 @import "components/box.scss";
-body{
+@import "components/footer.scss";
+body {
   overflow-x: hidden !important;
+}
+img.hero-image {
+  min-height: 100%;
+  max-height: 100%;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center center;
 }
 .ltr {
   direction: ltr;
@@ -20,12 +29,11 @@ body{
   font-weight: 700;
 }
 
-
-.ant-image-preview-img-wrapper{
+.ant-image-preview-img-wrapper {
   display: grid !important;
   padding: 10px;
 }
-.ant-image-preview-img-wrapper img{
+.ant-image-preview-img-wrapper img {
   height: 70%;
   margin: auto !important;
 }

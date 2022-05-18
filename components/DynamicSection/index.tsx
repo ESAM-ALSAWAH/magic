@@ -8,7 +8,7 @@ interface props {
   description: string;
   button: string;
   lang: string;
-  id?:string
+  id?: string;
 }
 export const DynamicSection: React.FC<props> = ({
   images = [],
@@ -17,7 +17,7 @@ export const DynamicSection: React.FC<props> = ({
   description,
   button,
   lang,
-  id
+  id,
 }) => {
   return (
     <div className=" relative my-40 " id={id}>
@@ -31,7 +31,11 @@ export const DynamicSection: React.FC<props> = ({
         loading="lazy"
       />
       <div className="container flex flex-col md:flex-row md:justify-between my-10 px-4 gap-20 z-50">
-        <div className="flex flex-row items-center gap-x-10 min-w-w-[200px] flex-1">
+        <div
+          className="flex flex-row items-center gap-x-10 min-w-w-[200px] flex-1"
+          data-aos={lang === "ar" ? "fade-left" : "fade-right"}
+          data-aos-duration="1000"
+        >
           <div className="max-w-[250px] w-[100%]">
             <img src={images[0]} width="100%" loading="lazy" />
           </div>
@@ -40,11 +44,15 @@ export const DynamicSection: React.FC<props> = ({
               <img src={images[1]} width="100%" loading="lazy" />
             </div>
             <div className="max-w-[250px] w-[100%]">
-              <img src={images[2]} width="100%" loading="lazy"/>
+              <img src={images[2]} width="100%" loading="lazy" />
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-y-4 flex-1 justify-center ">
+        <div
+          className="flex flex-col gap-y-4 flex-1 justify-center  "
+          data-aos={lang === "en" ? "fade-left" : "fade-right"}
+          data-aos-duration="1000"
+        >
           <h4 className="text-[#f8bf58]">{title}</h4>
           <h3 className="text-[#0f1b3e] font-semibold">{title2}</h3>
           <p>{description}</p>
