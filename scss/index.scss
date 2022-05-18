@@ -19,6 +19,16 @@ body{
   text-shadow: 1px 1px 1px $primaryColor;
   font-weight: 700;
 }
+
+
+.ant-image-preview-img-wrapper{
+  display: grid !important;
+  padding: 10px;
+}
+.ant-image-preview-img-wrapper img{
+  height: 70%;
+  margin: auto !important;
+}
 @layer base {
   html,
   body {
