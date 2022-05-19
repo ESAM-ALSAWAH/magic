@@ -29,14 +29,16 @@ img.hero-image {
   text-shadow: 1px 1px 1px $primaryColor;
   font-weight: 700;
 }
-
-.ant-image-preview-img-wrapper {
-  display: grid !important;
-  padding: 10px;
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
 }
-.ant-image-preview-img-wrapper img {
-  height: 70%;
-  margin: auto !important;
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 25px !important;
 }
 @layer base {
   html,

@@ -13,11 +13,6 @@ export const SwiperImage: React.FC<any> = ({ children }) => {
         pagination={{
           clickable: true,
         }}
-        style={{
-          "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff",
-          "--swiper-navigation-size": "20px",
-        }}
         centeredSlides={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
