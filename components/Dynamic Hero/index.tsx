@@ -25,7 +25,7 @@ export const DynamicHero: React.FC<props> = ({
     });
   };
   return (
-    <div className="hero-section container flex flex-col md:flex-row md:justify-between mb-20 px-4 gap-20 z-50 ">
+    <div className="hero-section container flex flex-col md:flex-row md:justify-between mb-20 px-4 gap-20 z-50 overflow-hidden w-[100%]">
       <div className="flex flex-col gap-y-4 flex-1 justify-center order-2 md:order-1">
         <h4 className="text-[#f8bf58]">{title}</h4>
         <h3 className="text-[#0f1b3e] font-semibold">{title2}</h3>
