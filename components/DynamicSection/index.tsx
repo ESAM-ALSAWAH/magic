@@ -20,7 +20,7 @@ export const DynamicSection: React.FC<props> = ({
   id,
 }) => {
   return (
-    <div className=" relative my-40 " id={id}>
+    <div className=" relative my-40 overflow-hidden" id={id}>
       <img
         src="/images/shape.svg"
         className={clsx(
