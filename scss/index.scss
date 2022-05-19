@@ -7,6 +7,14 @@
 @import "components/box.scss";
 @import "components/footer.scss";
 @import "components/loader.scss";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 body {
   overflow-x: hidden !important;
 }
