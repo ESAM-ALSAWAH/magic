@@ -36,7 +36,7 @@ const Error404 = () => {
             </button>
           </div>
           <div className="order-1  sm:order-2 w-[50%]  sm:w-[300px] sm:h-[300px]">
-            <img src="/images/404.png" width="100%" height="100%" />
+            <img src="/images/404.png" alt="404" width="100%" height="100%" />
           </div>
         </div>
       </div>

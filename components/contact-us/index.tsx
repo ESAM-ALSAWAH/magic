@@ -16,6 +16,7 @@ export const Contact_us: React.FC<{ t: any }> = ({ t }) => {
               src="/images/icons/twiter.png"
               alt="twiter"
               className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+              loading="lazy"
             />
           </a>
           <a href="">
@@ -23,6 +24,7 @@ export const Contact_us: React.FC<{ t: any }> = ({ t }) => {
               src="/images/icons/instgrame.png"
               alt="instagram"
               className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+              loading="lazy"
             />
           </a>
           <a href="">
@@ -30,6 +32,7 @@ export const Contact_us: React.FC<{ t: any }> = ({ t }) => {
               src="/images/icons/snapchat.png"
               alt="snapchat"
               className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+              loading="lazy"
             />
           </a>
           <a href="">
@@ -37,6 +40,7 @@ export const Contact_us: React.FC<{ t: any }> = ({ t }) => {
               src="/images/icons/linkedin.png"
               alt="linkedin"
               className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+              loading="lazy"
             />
           </a>
           <a href="">
@@ -44,6 +48,7 @@ export const Contact_us: React.FC<{ t: any }> = ({ t }) => {
               src="/images/icons/facebook.png"
               alt="facebook"
               className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+              loading="lazy"
             />
           </a>
         </div>
@@ -52,12 +57,14 @@ export const Contact_us: React.FC<{ t: any }> = ({ t }) => {
           alt="group_map_right"
           width={200}
           className="absolute right-0 top-0 hidden md:block"
+          loading="lazy"
         />
         <img
           src="/images/group_map_left.png"
           alt="group_map_left"
           width={200}
           className="absolute left-0 bottom-0 hidden md:block"
+          loading="lazy"
         />
       </div>
       <div className="bg-contact-us bg-cover bg-center min-h-[400px] h-[100%] mt-10 py-10">
@@ -87,6 +94,7 @@ export const Contact_us: React.FC<{ t: any }> = ({ t }) => {
                 alt="location"
                 width={20}
                 height={20}
+                loading="lazy"
               />
               <p>{t("location")} :</p>
             </div>

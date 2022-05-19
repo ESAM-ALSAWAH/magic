@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120.542" height="120.542" viewBox="0 0 120.542 120.542">
+  <defs>
+    <filter id="Rectangle_387" x="0" y="0" width="120.542" height="120.542" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#0f1b3e"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f3d07b"/>
+      <stop offset="0.264" stop-color="#e8ce8e"/>
+      <stop offset="0.456" stop-color="#e9ca7d"/>
+      <stop offset="0.506" stop-color="#efd697"/>
+      <stop offset="0.682" stop-color="#e8d29a"/>
+      <stop offset="0.812" stop-color="#efe1be"/>
+      <stop offset="0.92" stop-color="#ecd7a4"/>
+      <stop offset="1" stop-color="#eee1c2"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_84" data-name="Group 84" transform="translate(-450.929 -1041.5)">
+    <g id="Group_82" data-name="Group 82" transform="translate(459.929 1047.5)">
+      <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Rectangle_387)">
+        <rect id="Rectangle_387-2" data-name="Rectangle 387" width="69.658" height="75.358" transform="translate(62.29 6) rotate(45)" fill="#101c35"/>
+      </g>
+    </g>
+    <path id="logo2" d="M267.78,383v39.6h31.49V383Zm18.036,9.556h10.068v3.224H285.816Zm-15.079-6.51h14.546V400.19h-3.516v-6.62h0v-4h0v-.3h-11.03Zm25.6,33.523H271.171v-3.219h10.11v.057h.5V412.4h0v-6.986h3.516v10.972h.522v-.057h10.5Zm-25.147-6.51V409.84H281.3v3.219Zm25.147,0H285.785V409.84H292.8v-5.418H270.737V392.562h10.544v3.224h-7.033V401.2h22.07Z" transform="translate(227.674 695.969)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

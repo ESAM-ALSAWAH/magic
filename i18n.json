@@ -4,7 +4,8 @@
   "pages": {
     "*": ["nav"],
     "/404": ["404"],
-    "/about":["about_us"],
+    "/about": ["about_us"],
+    "/contact": ["contact_us"],
     "/group/specialone": ["specialone"],
     "/group/realestate": ["realestate"]
   }

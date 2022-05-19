@@ -37,14 +37,14 @@ export const DynamicSection: React.FC<props> = ({
           data-aos-duration="1000"
         >
           <div className="max-w-[250px] w-[100%]">
-            <img src={images[0]} width="100%" loading="lazy" />
+            <img src={images[0]} width="100%" loading="lazy" alt="image" />
           </div>
           <div className="flex flex-col gap-y-4">
             <div className="max-w-[250px] w-[100%]">
-              <img src={images[1]} width="100%" loading="lazy" />
+              <img src={images[1]} width="100%" loading="lazy" alt="image1" />
             </div>
             <div className="max-w-[250px] w-[100%]">
-              <img src={images[2]} width="100%" loading="lazy" />
+              <img src={images[2]} width="100%" loading="lazy" alt="image2" />
             </div>
           </div>
         </div>

@@ -17,6 +17,7 @@ const About = () => {
         <div className="flex flex-row  items-center sm:justify-start gap-x-2 mb-5">
           <Image
             src="/images/logo.svg"
+            alt="about"
             width="100px"
             height="100px"
             loading="lazy"
@@ -30,6 +31,7 @@ const About = () => {
 
           <img
             src="/images/about_1.png"
+            alt="about"
             className="w-[100%] sm:w-[30%] order-1 sm:order-2"
             loading="lazy"
           />
@@ -37,6 +39,7 @@ const About = () => {
         <div className="flex flex-col justify-center sm:flex-row sm:justify-around items-center  gap-6 w-[100%] my-6">
           <img
             src="/images/about_2.png"
+            alt="about"
             className="w-[100%] sm:w-[30%]"
             loading="lazy"
           />

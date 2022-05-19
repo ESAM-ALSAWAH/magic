@@ -51,31 +51,40 @@ export const Footer: React.FC<props> = ({ logo }) => {
           </div>
           <div className="flex flex-col items-center sm:items-start gap-y-1">
             <h6>Follow Us</h6>
-            <a href="/" className="flex flex-row items-center gap-x-3">
-              <AiOutlineTwitter /> twitter
-            </a>
-            <a href="/" className="flex flex-row items-center gap-x-3">
-              <AiFillFacebook /> facebook
-            </a>
-            <a href="/" className="flex flex-row items-center gap-x-3">
-              <AiFillLinkedin /> Linked In
-            </a>
-            <a href="/" className="flex flex-row items-center gap-x-3">
-              <BsSnapchat /> snapchat
-            </a>
-            <a href="/" className="flex flex-row items-center gap-x-3">
-              <AiFillInstagram /> instagram
-            </a>
+            <Link href="https://twitter.com/?lang=en" passHref={true}>
+              <a className="flex flex-row items-center gap-x-3">
+                <AiOutlineTwitter /> twitter
+              </a>
+            </Link>
+            <Link href="https://www.facebook.com/" passHref={true}>
+              <a className="flex flex-row items-center gap-x-3">
+                <AiFillFacebook /> facebook
+              </a>
+            </Link>
+            <Link href="https://uk.linkedin.com/" passHref={true}>
+              <a className="flex flex-row items-center gap-x-3">
+                <AiFillLinkedin /> Linked In
+              </a>
+            </Link>
+            <Link href="https://www.snapchat.com/" passHref={true}>
+              <a className="flex flex-row items-center gap-x-3">
+                <BsSnapchat /> snapchat
+              </a>
+            </Link>
+            <Link href="https://www.instagram.com/?hl=en" passHref={true}>
+              <a className="flex flex-row items-center gap-x-3">
+                <AiFillInstagram /> instagram
+              </a>
+            </Link>
           </div>
           <div className=" flex flex-col gap-y-1 items-center sm:items-start">
             <h6>Contact info</h6>
-            <a
-              href="mailto:info@magicgroup.qa"
-              className="flex flex-row items-center gap-x-3"
-            >
-              <AiFillMail />
-              info@magicgroup.qa
-            </a>
+            <Link href="mailto:info@magicgroup.qa" passHref={true}>
+              <a className="flex flex-row items-center gap-x-3">
+                <AiFillMail />
+                info@magicgroup.qa
+              </a>
+            </Link>
           </div>
         </div>
       </div>

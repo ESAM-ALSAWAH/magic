@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { SwiperSlide } from "swiper/react";
 import { Navbar, Footer } from "@ui";
 import {
   Contact_us,
@@ -7,6 +8,7 @@ import {
   Why_us,
   MiniCard,
   DynamicHero,
+  SwiperImage,
 } from "@components";
 import { Sparkling_services, Premium_Services } from "@constants";
 import useTranslation from "next-translate/useTranslation";
@@ -62,6 +64,7 @@ const Specialone: NextPage = () => {
       <div className="relative py-[50px]">
         <img
           src="/images/shape.svg"
+          alt="shape"
           className="absolute -left-[200px] -bottom-[200px] "
           style={{ zIndex: -1 }}
           loading="lazy"
@@ -82,7 +85,39 @@ const Specialone: NextPage = () => {
           ))}
         </div>
       </div>
-
+      <div className="container px-8 flex flex-col md:flex-row md:justify-around ">
+        <div className="flex flex-col">
+          <h4 className="text-[#f8bf58]">Scope Of Our Work in :</h4>
+          <ul className="list-disc mt-6 text-xl">
+            <li>Cleaning Services</li>
+            <li className="my-4">Serve All kinds Of Occasions</li>
+            <li>Wedding Caterer</li>
+          </ul>
+        </div>
+        <SwiperImage>
+          <SwiperSlide>
+            <img
+              src="/images/specialone/why_us.png"
+              alt="why us"
+              loading="lazy"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/images/specialone/why_us.png"
+              alt="why us"
+              loading="lazy"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/images/specialone/why_us.png"
+              alt="why us"
+              loading="lazy"
+            />
+          </SwiperSlide>
+        </SwiperImage>
+      </div>
       <div className="container px-4 flex flex-col items-center my-40">
         <h3 className="text-[#f8bf58] text-center">{t("Partner_title")}</h3>
         <div className="relative py-8 px-4 shadow-lg my-8 max-w-[800px] m-auto ">
@@ -90,7 +125,7 @@ const Specialone: NextPage = () => {
             <p className="text-center">{t("Partner_description")}</p>
           </div>
         </div>
-        <img src="/images/shape.svg" alt="" />
+        <img src="/images/shape.svg" alt="shape" loading="lazy" />
       </div>
       <Why_us
         title={t("why_title")}
