@@ -39,7 +39,7 @@ const Realestate: NextPage = () => {
         description={t("hero_description")}
         images={hero_Images}
       />
-      <DynamicSection
+      {/*<DynamicSection
         images={Section1_Images}
         title={t("section1_title")}
         title2={t("section1_seconde_title")}
@@ -47,7 +47,7 @@ const Realestate: NextPage = () => {
         button={t("section1_button")}
         lang={lang}
         id="to-element"
-      />
+      />*/}
       <div className="container ">
         <h5 className="text-[#f8bf58] text-center">
           {t("services_section_title")}

@@ -35,7 +35,7 @@ const Specialone: NextPage = () => {
         description={t("hero_description")}
         images={Section1_Images}
       />
-      <DynamicSection
+      {/*  <DynamicSection
         images={Section1_Images}
         title={t("section1_title")}
         title2={t("section1_seconde_title")}
@@ -43,7 +43,7 @@ const Specialone: NextPage = () => {
         button={t("section1_button")}
         lang={lang}
         id="to-element"
-      />
+      />*/}
 
       <div className="container px-4 my-20">
         <h4 className="text-[#f8bf58] text-center sm:px-4 ">
