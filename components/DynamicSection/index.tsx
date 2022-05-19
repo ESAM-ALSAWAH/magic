@@ -33,8 +33,8 @@ export const DynamicSection: React.FC<props> = ({
       <div className="container flex flex-col md:flex-row md:justify-between my-10 px-4 gap-20 z-50">
         <div
           className="flex flex-row items-center gap-x-10 min-w-w-[200px] flex-1"
-          /*data-aos={lang === "ar" ? "fade-left" : "fade-right"}
-          data-aos-duration="1000"*/
+          data-aos={"fade-right"}
+          data-aos-duration="1000"
         >
           <div className="max-w-[250px] w-[100%]">
             <img src={images[0]} width="100%" loading="lazy" alt="image" />
@@ -50,8 +50,8 @@ export const DynamicSection: React.FC<props> = ({
         </div>
         <div
           className="flex flex-col gap-y-4 flex-1 justify-center  "
-          /*data-aos={lang === "en" ? "fade-left" : "fade-right"}
-          data-aos-duration="1000"*/
+          data-aos={"fade-left"}
+          data-aos-duration="1000"
         >
           <h4 className="text-[#f8bf58]">{title}</h4>
           <h3 className="text-[#0f1b3e] font-semibold">{title2}</h3>
