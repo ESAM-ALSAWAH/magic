@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "contact-us": "url('/images/maps.png')",
+        "contact-us-home":"url('/images/contact_background.svg')"
       },
       colors: {
         primary: {

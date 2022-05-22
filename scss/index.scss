@@ -1,6 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+//English Font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+//Arabic Font 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
+//
 @import "base/variable";
 @import "base/shared";
 @import "components/nav.scss";
@@ -16,6 +26,18 @@
 }
 body {
   overflow-x: hidden !important;
+}
+.App.en{
+  font-family: 'Roboto', sans-serif;
+}
+.App.en :is(h1,h2,h3,h4,h5,h6){
+  font-family: 'Poppins', sans-serif !important;
+}
+.App.ar{
+  font-family: 'Noto Sans Arabic', sans-serif;
+}
+.App.ar :is(h1,h2,h3,h4,h5,h6){
+  font-family: 'Noto Naskh Arabic', serif !important;
 }
 img.hero-image {
   min-height: 100%;

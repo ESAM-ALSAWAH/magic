@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+export const Contact_us: React.FC<{ t: any, company: string }> = ({ t,company }) => {
+  const form = useRef<any>();
 
-export const Contact_us: React.FC<{ t: any }> = ({ t }) => {
+  const handleSubmit = (e: any): void => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_l60tiwf', 'template_nlpgglg', form.current, 'ksOP34XIYWzs5XwUw')
+      .then((result) => {
+        form.current.reset();
+        toast.success(result.text);
+      }, (error) => {
+        toast.error(error.text);
+      });
+  }
   return (
     <div
       className="pt-12"
@@ -73,19 +88,24 @@ export const Contact_us: React.FC<{ t: any }> = ({ t }) => {
             <p className="text-center">{t("form_1")}</p>
             <h5 className="text-[#0f1b3e]">{t("form_2")}</h5>
             <p className="text-[#0f1b3e]">{t("contact_us_title")}</p>
-            <input
-              type="text"
-              placeholder={t("email")}
-              className="px-6 py-3  outline-none border-2 focus:border-[#0f1b3e] placeholder:text-sm"
-            />
-            <textarea
-              rows={4}
-              placeholder={t("message")}
-              className="px-6 py-3 resize-none  outline-none border-2  focus:border-[#0f1b3e]  placeholder:text-sm"
-            />
-            <button className="bg-primary-bg text-white font-semibold px-14 py-4 w-fit animation-button">
-              {t("send")}
-            </button>
+            <form ref={form} onSubmit={handleSubmit} className="flex flex-col gap-y-4">
+              <input name="company" defaultValue={company} className="hidden" />
+              <input
+                type="email"
+                name="email"
+                placeholder={t("email")}
+                className="px-6 py-3  outline-none border-2 focus:border-[#0f1b3e] placeholder:text-sm"
+              />
+              <textarea
+                rows={4}
+                name="message"
+                placeholder={t("message")}
+                className="px-6 py-3 resize-none  outline-none border-2  focus:border-[#0f1b3e]  placeholder:text-sm"
+              />
+              <button className="bg-primary-bg text-white font-semibold px-14 py-4 w-fit animation-button">
+                {t("send")}
+              </button>
+            </form>
           </div>
           <div className="flex flex-col py-4 px-8 max-w-[471px] bg-white gap-y-3 h-fit sm:self-end">
             <div className="flex flex-row items-center gap-x-2">
@@ -105,6 +125,18 @@ export const Contact_us: React.FC<{ t: any }> = ({ t }) => {
           </div>
         </div>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+
+      />
+
     </div>
   );
 };

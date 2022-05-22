@@ -37,3 +37,60 @@
   height: 100%;
   width: 100%;
 }
+
+.bounce {
+  animation: bounce-animate 0.5s linear alternate infinite;
+}
+
+.card-home-1>img,
+.card-home-2>img{
+  position: absolute;
+  inset: 0;
+  height: 100%;
+}
+.card-home-1>div,
+.card-home-2>div{
+  transition: all .4s ease;
+}
+.card-home-2{
+  align-self: flex-end;
+}
+.card-home-1:hover >.inside-card{
+  transition: all .4s ease;
+  right: -100%;
+}
+.card-home-2:hover >.inside-card{
+  transition: all .4s ease;
+  left: -100%;
+}
+@keyframes bounce-animate {
+  from {
+    transform: translateY(0) rotate(-45deg);
+  }
+  to {
+    transform: translateY(5px) translateX(5px) rotate(-45deg);
+  }
+}
+
+
+@media screen and (max-width:991px) {
+  .card-home-1:hover +.card-home-2{
+    z-index: 1 !important;
+  }
+  .card-home-1:hover >.inside-card{
+    transition: all .4s ease;
+    bottom: -100%;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 10000000000 !important;
+  }
+  .card-home-2:hover >.inside-card{
+    transition: all .4s ease;
+    bottom: -100%;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 10000000000 !important;
+  }
+}

@@ -1,8 +1,26 @@
+import { useRef } from 'react'
 import { Navbar, Footer } from "@ui";
 import type { NextPage } from "next";
+import emailjs from '@emailjs/browser';
 import Head from "next/head";
+import useTranslation from "next-translate/useTranslation";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home: NextPage = () => {
+  const { t } = useTranslation("home");
+  const form = useRef<any>();
+  const handleSubmit = (e: any): void => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_l60tiwf', 'template_nlpgglg', form.current, 'ksOP34XIYWzs5XwUw')
+    .then((result) => {
+      toast.success(result.text);
+      form.current.reset();
+    }, (error) => {
+      toast.error(error.text);
+    });
+  }
   return (
     <>
       <Head>
@@ -11,14 +29,13 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar logo="/images/logo.svg" />
-      <div className="about-us bg-[#0f1b33] overflow-hidden">
+      <div className="about-us bg-[#040D20] overflow-hidden">
         <div className="container py-10">
-          <h3 className=" text-white">About Us</h3>
+          <h3 className=" text-white mb-[100px] sm:my-0">{t("about_us")}</h3>
           <div className="flex flex-col sm:flex-row sm:justify-between items-center my-10 z-10">
-            <div className="order-2 sm:order-1 max-w-[500px] w-[100%] sm:w-[50%] h-[fit-content] p-10 shadow-sm  font-medium text-white">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-                ex consectetur nobis aliquid, corporis inventore.
+            <div className="order-2 sm:order-1 max-w-[500px] w-[100%] sm:w-[50%] h-[fit-content] p-10 shadow-sm   text-white">
+              <p className="leading-loose">
+                {t("about_us_description")}
               </p>
               <button
                 className="hover:scale-[1.1] transition-all ease-in"
@@ -30,7 +47,7 @@ const Home: NextPage = () => {
                   fontWeight: "bold",
                 }}
               >
-                Learn More
+                {t("learn_more")}
               </button>
             </div>
             <div className="relative order-1 sm:order-2 w-[100%] sm:w-[30%] z-10">
@@ -56,32 +73,76 @@ const Home: NextPage = () => {
         </div>
       </div>
 
-      <div className="group-companies">
-        <div className="container py-10">
-          <h3 className=" text-white">About Us</h3>
+      <div className="provideds-section overflow-hidden relative py-20 bg-[#040D20] text-white">
+        <img src="/images/shape_dots.svg" alt="shapeDOTS" className="absolute -bottom-20 right-[-100px]" />
+        <div className=" container gap-y-10 flex flex-col sm:flex-row sm:justify-around">
           <div className="flex flex-col">
-            <div className="card relative min-w-[250px] min-h-[250px] w-[100%] h-[100%]">
-              <img src="" alt="" />
+            <h6 className="text-white">{t("section_title_1")} </h6>
+            <h1 className="text-white">{t("section_title_2")}</h1>
+            <ul className="list-disc text-xl my-5">
+              <li>{t("section_list_1")}</li>
+              <li className="my-4">{t("section_list_2")}</li>
+              <li>{t("section_list_3")}</li>
+            </ul>
+
+            <button
+              className="hover:scale-[1.1] my-5 transition-all ease-in"
+              style={{
+                background: "linear-gradient(to right,#d8ba71 ,#c6bf78,#fff)",
+                color: "#fff",
+                width: "fit-content",
+                padding: ".5rem 3rem",
+                fontWeight: "bold",
+              }}
+            >
+              {t("learn_more")}
+            </button>
+          </div>
+          <div className="max-w-[100%] sm:max-w-[30%]">
+            <img src="/images/about_2.png" alt="images" />
+          </div>
+
+        </div>
+      </div>
+
+      <div className="group-companies overflow-hidden relative py-20 bg-[#040D20]">
+        <img src="/images/shape_dots.svg" alt="shapeDOTS" className="absolute bottom-0 left-[-100px]" />
+        <div className="container py-20">
+          <h2 className="text-white capitalize">{t("our_group")}</h2>
+          <div className="ltr flex flex-col py-10 gap-y-10">
+            <div className="card-home-1 relative min-w-[250px] min-h-[250px] max-w-[400px] max-h-[400px] w-[100%] h-[100%] cursor-pointer z-30">
+              <img src="/images/about_1.png" alt="card_image" className=" w-[100%] z-20 shadow-lg" />
+              <div className="inside-card bg-white absolute  text-center py-10 top-0 right-0  bottom-0 w-[100%]  -z-10">
+                <h5 className="text-[#2747a5]">Magic Real Estate</h5>
+                <p className="text-[#000]">{t("companie_1")}</p>
+              </div>
+
+            </div>
+            <div className="card-home-2 relative min-w-[250px] min-h-[250px] max-w-[400px] max-h-[400px] w-[100%] h-[100%] cursor-pointer z-30 ">
+              <img src="/images/about_1.png" alt="card_image" className=" w-[100%] z-20 shadow-lg" />
+              <div className="inside-card bg-white absolute  text-center py-10 top-0 left-0  bottom-0 w-[100%]  -z-10">
+                <h5 className="text-[#2747a5]">Special One</h5>
+                <p className="text-[#000]">{t("companie_2")}</p>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
       <div
-        className="pt-12"
-        style={{
-          background: "#32353d",
-        }}
+        className="py-12 bg-[#040D20]"
+
       >
         <div className="relative py-4">
           <h6 className="text-center text-white">
-            contact magic group company{" "}
+            {t("contact_us_description")}
           </h6>
-          <div className="flex flex-row gap-x-12 justify-center mt-7 bg-[#303c4a] w-[fit-content] m-auto px-20 py-12">
+          <div className="flex flex-row gap-x-4 sm:gap-x-12 justify-center mt-7 bg-[#303c4a] sm:w-[fit-content] m-auto px-3 sm:px-20 py-12">
             <a href="">
               <img
                 src="/images/icons/twiter.png"
                 alt="twiter"
-                className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+                className="w-[20px] h-[20px] sm:h-[80px] sm:w-[80px] "
                 loading="lazy"
               />
             </a>
@@ -89,7 +150,7 @@ const Home: NextPage = () => {
               <img
                 src="/images/icons/instgrame.png"
                 alt="instagram"
-                className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+                className="w-[20px] h-[20px] sm:h-[80px] sm:w-[80px] "
                 loading="lazy"
               />
             </a>
@@ -97,7 +158,7 @@ const Home: NextPage = () => {
               <img
                 src="/images/icons/snapchat.png"
                 alt="snapchat"
-                className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+                className="w-[20px] h-[20px] sm:h-[80px] sm:w-[80px] "
                 loading="lazy"
               />
             </a>
@@ -105,7 +166,7 @@ const Home: NextPage = () => {
               <img
                 src="/images/icons/linkedin.png"
                 alt="linkedin"
-                className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+                className="w-[20px] h-[20px] sm:h-[80px] sm:w-[80px] "
                 loading="lazy"
               />
             </a>
@@ -113,7 +174,7 @@ const Home: NextPage = () => {
               <img
                 src="/images/icons/facebook.png"
                 alt="facebook"
-                className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+                className="w-[20px] h-[20px] sm:h-[80px] sm:w-[80px] "
                 loading="lazy"
               />
             </a>
@@ -126,35 +187,41 @@ const Home: NextPage = () => {
             loading="lazy"
           />
         </div>
-        <div className=" bg-cover bg-center min-h-[400px] h-[100%] mt-10 py-10">
-          <div className="container flex flex-col sm:flex-row gap-x-20 gap-y-6   min-h-[400px] h-[100%] ">
+        <div className=" bg-contact-us-home bg-cover bg-center  min-h-[400px] h-[100%] mt-10 py-10 w-[100%]">
+          <div className="container flex flex-col sm:flex-row sm:justify-around lg:gap-x-20 gap-y-6   min-h-[400px] h-[100%] ">
             <div className="flex flex-col py-4 px-8 max-w-[500px] w-[100%]  gap-y-8 ">
-              <h5 className="text-white">Contact Us</h5>
-              <p className="text-[#afb4b8]">contact magic group company now</p>
-              <input
-                type="email"
-                placeholder="Enter Your Email"
-                className="px-6 py-3  outline-none border-2 focus:border-[#0f1b3e] placeholder:text-sm"
-              />
-              <textarea
-                rows={4}
-                placeholder="Message"
-                className="px-6 py-3 resize-none  outline-none border-2  focus:border-[#0f1b3e]  placeholder:text-sm"
-              />
-              <button
-                className="hover:scale-[1.1] transition-all ease-in"
-                style={{
-                  background: "linear-gradient(to right,#d8ba71 ,#c6bf78,#fff)",
-                  color: "#fff",
-                  width: "fit-content",
-                  padding: ".5rem 3rem",
-                  fontWeight: "bold",
-                }}
-              >
-                Send
-              </button>
+              <h5 className="text-white">{t("contact_us")}</h5>
+              <p className="text-[#afb4b8]">{t("contact_us_description")}</p>
+              <form ref={form} onSubmit={handleSubmit} className="flex flex-col gap-y-4">
+
+              <input type="text" name='company' defaultValue="Magic Group" className="hidden" />
+                <input
+                  type="email"
+                  name='email'
+                  placeholder={t("email")}
+                  className="px-6 py-3  outline-none border-2  placeholder:text-sm"
+                />
+                <textarea
+                  rows={4}
+                  name="message"
+                  placeholder={t("message")}
+                  className="px-6 py-3 resize-none  outline-none border-2    placeholder:text-sm"
+                />
+                <button
+                  className="hover:scale-[1.1] transition-all ease-in"
+                  style={{
+                    background: "linear-gradient(to right,#d8ba71 ,#c6bf78,#fff)",
+                    color: "#fff",
+                    width: "fit-content",
+                    padding: ".5rem 3rem",
+                    fontWeight: "bold",
+                  }}
+                >
+                  {t("send")}
+                </button>
+              </form>
             </div>
-            <div className="flex flex-col py-4 px-8 max-w-[471px] bg-[#303c4a] gap-y-3 h-fit sm:self-end">
+            <div className="flex flex-col py-4 px-8 max-w-[471px] sm:self-end sm:text-center gap-y-3 h-fit">
               <div className="flex flex-row items-center gap-x-2 text-white">
                 <img
                   src="/images/icons/location.png"
@@ -163,7 +230,7 @@ const Home: NextPage = () => {
                   height={20}
                   loading="lazy"
                 />
-                <p className="h-[10px]">Our Office Location :</p>
+                <p className="h-[10px]">{t("location")}</p>
               </div>
               <p className="text-white">Al Sadd Royal Plaza</p>
               <a href="" className="text-[#d8ba71]">
@@ -174,6 +241,17 @@ const Home: NextPage = () => {
         </div>
       </div>
       <Footer logo="/images/logo.svg" />
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+
+      />
     </>
   );
 };
