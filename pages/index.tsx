@@ -1,4 +1,4 @@
-import { Navbar } from "@ui";
+import { Navbar, Footer } from "@ui";
 import type { NextPage } from "next";
 import Head from "next/head";
 
@@ -11,6 +11,169 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar logo="/images/logo.svg" />
+      <div className="about-us bg-[#0f1b33] overflow-hidden">
+        <div className="container py-10">
+          <h3 className=" text-white">About Us</h3>
+          <div className="flex flex-col sm:flex-row sm:justify-between items-center my-10 z-10">
+            <div className="order-2 sm:order-1 max-w-[500px] w-[100%] sm:w-[50%] h-[fit-content] p-10 shadow-sm  font-medium text-white">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                ex consectetur nobis aliquid, corporis inventore.
+              </p>
+              <button
+                className="hover:scale-[1.1] transition-all ease-in"
+                style={{
+                  background: "linear-gradient(to right,#d8ba71 ,#c6bf78,#fff)",
+                  color: "#fff",
+                  width: "fit-content",
+                  padding: ".5rem 3rem",
+                  fontWeight: "bold",
+                }}
+              >
+                Learn More
+              </button>
+            </div>
+            <div className="relative order-1 sm:order-2 w-[100%] sm:w-[30%] z-10">
+              <img
+                src="/images/about_1.png"
+                alt="image about"
+                className="  w-[100%] "
+                style={{
+                  zIndex: "10",
+                }}
+                loading="lazy"
+              />
+              <img
+                src="/images/shape.svg"
+                alt="shape"
+                style={{
+                  zIndex: "-1",
+                }}
+                className="absolute -top-20 right-[-100px]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="group-companies">
+        <div className="container py-10">
+          <h3 className=" text-white">About Us</h3>
+          <div className="flex flex-col">
+            <div className="card relative min-w-[250px] min-h-[250px] w-[100%] h-[100%]">
+              <img src="" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="pt-12"
+        style={{
+          background: "#32353d",
+        }}
+      >
+        <div className="relative py-4">
+          <h6 className="text-center text-white">
+            contact magic group company{" "}
+          </h6>
+          <div className="flex flex-row gap-x-12 justify-center mt-7 bg-[#303c4a] w-[fit-content] m-auto px-20 py-12">
+            <a href="">
+              <img
+                src="/images/icons/twiter.png"
+                alt="twiter"
+                className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+                loading="lazy"
+              />
+            </a>
+            <a href="">
+              <img
+                src="/images/icons/instgrame.png"
+                alt="instagram"
+                className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+                loading="lazy"
+              />
+            </a>
+            <a href="">
+              <img
+                src="/images/icons/snapchat.png"
+                alt="snapchat"
+                className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+                loading="lazy"
+              />
+            </a>
+            <a href="">
+              <img
+                src="/images/icons/linkedin.png"
+                alt="linkedin"
+                className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+                loading="lazy"
+              />
+            </a>
+            <a href="">
+              <img
+                src="/images/icons/facebook.png"
+                alt="facebook"
+                className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <img
+            src="/images/group_map_right.png"
+            alt="group_map_right"
+            width={200}
+            className="absolute right-0 top-0 hidden md:block"
+            loading="lazy"
+          />
+        </div>
+        <div className=" bg-cover bg-center min-h-[400px] h-[100%] mt-10 py-10">
+          <div className="container flex flex-col sm:flex-row gap-x-20 gap-y-6   min-h-[400px] h-[100%] ">
+            <div className="flex flex-col py-4 px-8 max-w-[500px] w-[100%]  gap-y-8 ">
+              <h5 className="text-white">Contact Us</h5>
+              <p className="text-[#afb4b8]">contact magic group company now</p>
+              <input
+                type="email"
+                placeholder="Enter Your Email"
+                className="px-6 py-3  outline-none border-2 focus:border-[#0f1b3e] placeholder:text-sm"
+              />
+              <textarea
+                rows={4}
+                placeholder="Message"
+                className="px-6 py-3 resize-none  outline-none border-2  focus:border-[#0f1b3e]  placeholder:text-sm"
+              />
+              <button
+                className="hover:scale-[1.1] transition-all ease-in"
+                style={{
+                  background: "linear-gradient(to right,#d8ba71 ,#c6bf78,#fff)",
+                  color: "#fff",
+                  width: "fit-content",
+                  padding: ".5rem 3rem",
+                  fontWeight: "bold",
+                }}
+              >
+                Send
+              </button>
+            </div>
+            <div className="flex flex-col py-4 px-8 max-w-[471px] bg-[#303c4a] gap-y-3 h-fit sm:self-end">
+              <div className="flex flex-row items-center gap-x-2 text-white">
+                <img
+                  src="/images/icons/location.png"
+                  alt="location"
+                  width={20}
+                  height={20}
+                  loading="lazy"
+                />
+                <p className="h-[10px]">Our Office Location :</p>
+              </div>
+              <p className="text-white">Al Sadd Royal Plaza</p>
+              <a href="" className="text-[#d8ba71]">
+                link
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer logo="/images/logo.svg" />
     </>
   );
 };
