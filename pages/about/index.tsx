@@ -14,7 +14,7 @@ const About = () => {
       </Head>
       <Navbar logo="/images/logo.svg" />
       <div className="container py-20">
-        <div className="flex flex-row  items-center sm:justify-start gap-x-2 mb-5">
+        <div className="flex flex-row  items-center sm:justify-start gap-x-2 mb-5" >
           <Image
             src="/images/logo.svg"
             alt="about"
@@ -24,7 +24,8 @@ const About = () => {
           />
           <h4 className="titlePage">{t("about_us")}</h4>
         </div>
-        <div className="flex flex-col justify-center sm:flex-row sm:justify-around items-center  gap-6 w-[100%]">
+        <div className="flex flex-col justify-center sm:flex-row sm:justify-around items-center  gap-6 w-[100%]" data-aos={"fade-right"}
+          data-aos-duration="1000">
           <p className="max-w-[500px] w-[100%] sm:w-[50%] p-10 shadow-sm bg-white order-2 sm:order-1 font-medium">
             {t("about1")}
           </p>
@@ -36,7 +37,8 @@ const About = () => {
             loading="lazy"
           />
         </div>
-        <div className="flex flex-col justify-center sm:flex-row sm:justify-around items-center  gap-6 w-[100%] my-6">
+        <div className="flex flex-col justify-center sm:flex-row sm:justify-around items-center  gap-6 w-[100%] my-6" data-aos={"fade-left"}
+          data-aos-duration="1000">
           <img
             src="/images/about_2.png"
             alt="about"

@@ -1,7 +1,8 @@
-import React from "react";
+import React,{useRef} from "react";
 import Head from "next/head";
 import { Navbar, Footer } from "@ui";
 import Link from "next/link";
+import emailjs from '@emailjs/browser';
 import {
   AiOutlineTwitter,
   AiFillFacebook,
@@ -10,23 +11,38 @@ import {
 } from "react-icons/ai";
 import { BsSnapchat } from "react-icons/bs";
 import useTranslation from "next-translate/useTranslation";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const FormContact: React.FC<any> = (props) => {
-  const { Social_Link_magic, t } = props;
+  const { Social_Link_magic, company,t } = props;
   const {
-    Emailto,
+    
     facebook,
     instagram,
     snapchat,
     linkedin,
     twiter,
   } = Social_Link_magic;
+  const form = useRef<any>();
+  const handleSubmit = (e: any): void => {
+    e.preventDefault();
+    emailjs.sendForm('service_l60tiwf', 'template_nlpgglg', form.current, 'ksOP34XIYWzs5XwUw')
+    .then((result) => {
+      toast.success(result.text);
+      form.current.reset();
+    }, (error) => {
+      toast.error(error.text);
+    });
+  }
   return (
-    <div className="flex flex-col py-4 px-4 sm:px-8 max-w-[500px] w-[100%] bg-white gap-y-4 m-auto">
+    <form ref={form} onSubmit={handleSubmit} className="flex flex-col py-4 px-4 sm:px-8 max-w-[500px] w-[100%] bg-white gap-y-4 m-auto">
+      <input name="company" defaultValue={company} className="hidden"/>
       <div className="flex flex-col gap-y-2">
         <label htmlFor="Full Name">{t("full_name")}</label>
         <input
           type="text"
           placeholder={t("full_name")}
+          name="full_name"
           className="px-3 py-2  outline-none border-2 focus:border-[#0f1b3e] placeholder:text-sm"
         />
       </div>
@@ -35,6 +51,7 @@ const FormContact: React.FC<any> = (props) => {
         <input
           type="email"
           placeholder={t("email")}
+          name="email"
           className="px-3 py-2  outline-none border-2 focus:border-[#0f1b3e] placeholder:text-sm"
         />
       </div>
@@ -43,6 +60,7 @@ const FormContact: React.FC<any> = (props) => {
         <input
           type="text"
           placeholder={t("subject")}
+          name="subject"
           className="px-3 py-2  outline-none border-2 focus:border-[#0f1b3e] placeholder:text-sm"
         />
       </div>
@@ -51,6 +69,7 @@ const FormContact: React.FC<any> = (props) => {
         <textarea
           rows={4}
           placeholder={t("write_message")}
+          name="message"
           className="px-3 py-2 resize-none  outline-none border-2  focus:border-[#0f1b3e]  placeholder:text-sm"
         />
       </div>
@@ -89,7 +108,7 @@ const FormContact: React.FC<any> = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </form>
   );
 };
 
@@ -127,7 +146,7 @@ const Contact = () => {
                 }}
               />
             </div>
-            <FormContact Social_Link_magic={Social_Link_magic} t={t} />
+            <FormContact Social_Link_magic={Social_Link_magic} t={t} company="Magic Group"/>
           </div>
           <img
             src="/images/contact_us.png"
@@ -147,7 +166,7 @@ const Contact = () => {
                 }}
               />
             </div>
-            <FormContact Social_Link_magic={Social_Link_magic} t={t} />
+            <FormContact Social_Link_magic={Social_Link_magic} t={t} company="Special One" />
           </div>
           <div className="flex flex-col order-2 sm:order-1 mx-0  sm:mx-4">
             <div className="m-0 flex items-center justify-around">
@@ -161,7 +180,7 @@ const Contact = () => {
                 }}
               />
             </div>
-            <FormContact Social_Link_magic={Social_Link_magic} t={t} />
+            <FormContact Social_Link_magic={Social_Link_magic} t={t} company="Real estate" />
           </div>
 
           <div className="absolute -bottom-16 left-[50%] -translate-x-[50%] text-center bg-white  py-4 px-8 shadow-lg min-w-[200px] ">
@@ -174,6 +193,17 @@ const Contact = () => {
         </div>
       </div>
       <Footer logo="/images/logo.svg" />
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+
+      />
     </>
   );
 };
