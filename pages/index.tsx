@@ -84,7 +84,7 @@ const Home: NextPage = () => {
      data-aos-duration="3000">
             <h6 className="text-white">{t("section_title_1")} </h6>
             <h1 className="text-white">{t("section_title_2")}</h1>
-            <ul className="list-disc text-xl my-5">
+            <ul className="sm:list-disc text-xl my-5">
               <li>{t("section_list_1")}</li>
               <li className="my-4">{t("section_list_2")}</li>
               <li>{t("section_list_3")}</li>
