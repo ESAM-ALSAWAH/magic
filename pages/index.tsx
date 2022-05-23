@@ -163,7 +163,7 @@ const Home: NextPage = () => {
                   loading="lazy"
                 />
               </a></Link>
-            <Link href="" passHref={true}>
+            <Link href="https://www.snapchat.com/add/specialone.qa?share_id=zYnEbxA1K0w&locale=en-US" passHref={true}>
               <a data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="600">
                 <img
                   src="/images/icons/snapchat.png"
