@@ -1,0 +1,36 @@
+ {/*<div className="container flex flex-wrap flex-row justify-center gap-y-10 gap-x-20 px-4 my-20">
+        <div className="flex flex-col gap-y-4 max-w-[300px] w-[100%] zoom-div ">
+          <div className="image-container">
+            <img
+              loading="lazy"
+              src="/images/realestate/1.png"
+              alt="image"
+              className="zoom-image"
+            />
+          </div>
+
+          <p className="text-[#d8ba71]">Villa in Ain Khaled</p>
+        </div>
+        <div className="flex flex-col gap-y-4 max-w-[300px] w-[100%] zoom-div">
+          <div className="image-container">
+            <img
+              loading="lazy"
+              src="/images/realestate/2.png"
+              alt="image"
+              className="zoom-image"
+            />
+          </div>
+          <p className="text-[#d8ba71]">Lusail Townhouses</p>
+        </div>
+        <div className="flex flex-col gap-y-4 max-w-[300px] w-[100%] zoom-div">
+          <div className="image-container">
+            <img
+              loading="lazy"
+              src="/images/realestate/3.png"
+              alt="image"
+              className="zoom-image"
+            />
+          </div>
+          <p className="text-[#d8ba71]">Al Thumama Villas</p>
+        </div>
+      </div>*/}

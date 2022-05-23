@@ -113,11 +113,11 @@ const FormContact: React.FC<any> = (props) => {
 };
 
 const Social_Link_magic = {
-  facebook: "",
-  instagram: "",
+  facebook: "https://www.facebook.com/Magic.group.qa/?ref=pages_you_manage",
+  instagram: "https://www.instagram.com/magic.group.qar/",
   snapchat: "",
-  linkedin: "",
-  twiter: "",
+  linkedin: "https://www.linkedin.com/company/magic-group-qa/about/?viewAsMember=true",
+  twiter: "https://twitter.com/MagicGroup8",
 };
 const Contact = () => {
   const { t } = useTranslation("contact_us");

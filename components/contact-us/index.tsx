@@ -26,7 +26,7 @@ export const Contact_us: React.FC<{ t: any, company: string }> = ({ t,company })
       <div className="relative py-4">
         <h6 className="text-center">{t("contact_us_title")}</h6>
         <div className="flex flex-row gap-x-6 justify-center mt-7 ">
-          <a href="">
+          <a href="" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
             <img
               src="/images/icons/twiter.png"
               alt="twiter"
@@ -34,7 +34,7 @@ export const Contact_us: React.FC<{ t: any, company: string }> = ({ t,company })
               loading="lazy"
             />
           </a>
-          <a href="">
+          <a href="" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="300">
             <img
               src="/images/icons/instgrame.png"
               alt="instagram"
@@ -42,7 +42,7 @@ export const Contact_us: React.FC<{ t: any, company: string }> = ({ t,company })
               loading="lazy"
             />
           </a>
-          <a href="">
+          <a href="" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="600">
             <img
               src="/images/icons/snapchat.png"
               alt="snapchat"
@@ -50,7 +50,7 @@ export const Contact_us: React.FC<{ t: any, company: string }> = ({ t,company })
               loading="lazy"
             />
           </a>
-          <a href="">
+          <a href="" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="900">
             <img
               src="/images/icons/linkedin.png"
               alt="linkedin"
@@ -58,7 +58,7 @@ export const Contact_us: React.FC<{ t: any, company: string }> = ({ t,company })
               loading="lazy"
             />
           </a>
-          <a href="">
+          <a href="" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="1200">
             <img
               src="/images/icons/facebook.png"
               alt="facebook"

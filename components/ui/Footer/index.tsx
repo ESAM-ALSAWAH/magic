@@ -51,17 +51,17 @@ export const Footer: React.FC<props> = ({ logo }) => {
           </div>
           <div className="flex flex-col items-center sm:items-start gap-y-1">
             <h6>Follow Us</h6>
-            <Link href="https://twitter.com/?lang=en" passHref={true}>
+            <Link href="https://twitter.com/MagicGroup8" passHref={true}>
               <a className="flex flex-row items-center gap-x-3">
                 <AiOutlineTwitter /> twitter
               </a>
             </Link>
-            <Link href="https://www.facebook.com/" passHref={true}>
+            <Link href="https://www.facebook.com/Magic.group.qa/?ref=pages_you_manage" passHref={true}>
               <a className="flex flex-row items-center gap-x-3">
                 <AiFillFacebook /> facebook
               </a>
             </Link>
-            <Link href="https://uk.linkedin.com/" passHref={true}>
+            <Link href="https://www.linkedin.com/company/magic-group-qa/about/?viewAsMember=true" passHref={true}>
               <a className="flex flex-row items-center gap-x-3">
                 <AiFillLinkedin /> Linked In
               </a>
@@ -71,7 +71,7 @@ export const Footer: React.FC<props> = ({ logo }) => {
                 <BsSnapchat /> snapchat
               </a>
             </Link>
-            <Link href="https://www.instagram.com/?hl=en" passHref={true}>
+            <Link href="https://www.instagram.com/magic.group.qar/" passHref={true}>
               <a className="flex flex-row items-center gap-x-3">
                 <AiFillInstagram /> instagram
               </a>
