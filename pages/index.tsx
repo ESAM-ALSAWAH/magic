@@ -57,7 +57,7 @@ const Home: NextPage = () => {
             </div>
             <div className="relative order-1 sm:order-2 w-[100%] sm:w-[30%] z-10" data-aos="zoom-in" data-aos-duration="1000">
               <img
-                src="/images/about_1.png"
+                src="/images/home/about-us.png"
                 alt="image about"
                 className="  w-[100%] "
                 style={{
@@ -104,8 +104,8 @@ const Home: NextPage = () => {
               {t("learn_more")}
             </button>
           </div>
-          <div className="max-w-[100%] sm:max-w-[30%]" data-aos="zoom-in" data-aos-duration="1000">
-            <img src="/images/about_2.png" alt="images" />
+          <div className="max-w-[100%] sm:max-w-[100%]" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="/images/home/provide.png" alt="images" className='w-[200%]' />
           </div>
 
         </div>
@@ -117,7 +117,7 @@ const Home: NextPage = () => {
           <h2 className="text-white capitalize">{t("our_group")}</h2>
           <div className="ltr flex flex-col py-10 gap-y-10">
             <div className="card-home-1 relative min-w-[250px] min-h-[250px] max-w-[400px] max-h-[400px] w-[100%] h-[100%] cursor-pointer z-30">
-              <img src="/images/about_1.png" alt="card_image" className=" w-[100%] z-20 shadow-lg" />
+              <img src="/images/home/realestate.png" alt="card_image" className=" w-[100%] z-20 shadow-lg" />
               <div className="inside-card bg-white absolute  text-center py-10 top-0 right-0  bottom-0 w-[100%]  -z-10">
                 <h5 className="text-[#2747a5]">Magic Real Estate</h5>
                 <p className="text-[#000]">{t("companie_1")}</p>
@@ -125,7 +125,7 @@ const Home: NextPage = () => {
 
             </div>
             <div className="card-home-2 relative min-w-[250px] min-h-[250px] max-w-[400px] max-h-[400px] w-[100%] h-[100%] cursor-pointer z-30 ">
-              <img src="/images/about_1.png" alt="card_image" className=" w-[100%] z-20 shadow-lg" />
+              <img src="/images/home/specialone-clean.png" alt="card_image" className=" w-[100%] z-20 shadow-lg" />
               <div className="inside-card bg-white absolute  text-center py-10 top-0 left-0  bottom-0 w-[100%]  -z-10">
                 <h5 className="text-[#2747a5]">Special One</h5>
                 <p className="text-[#000]">{t("companie_2")}</p>
