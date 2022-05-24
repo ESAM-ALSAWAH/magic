@@ -27,8 +27,8 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>{t("meta_title")}</title>
-        
-        <meta name="description" content={t("meta_description")}/>
+
+        <meta name="description" content={t("meta_description")} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -86,7 +86,7 @@ const Home: NextPage = () => {
           <div className="flex flex-col" data-aos="fade-up"
             data-aos-duration="3000">
             <h6 className="text-white text-5xl">{t("section_title_1")} </h6>
-            
+
             <ul className="sm:list-disc text-xl my-5">
               <li>{t("section_list_1")}</li>
               <li className="my-4">{t("section_list_2")}</li>
@@ -232,9 +232,14 @@ const Home: NextPage = () => {
                 />
                 <p className="h-[10px] text-2xl">{t("location")}</p>
               </div>
-              <p className="text-white text-2xl">Al Sadd Royal Plaza, Al Doha Qatar</p>
-             
-            
+              <Link href="" passHref={true}>
+                <a className="text-white text-2xl">
+
+                  Al Sadd Royal Plaza, Doha Qatar
+                </a>
+              </Link>
+
+
             </div>
           </div>
         </div>

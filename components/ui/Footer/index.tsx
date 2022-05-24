@@ -89,7 +89,7 @@ export const Footer: React.FC<props> = ({ logo }) => {
         </div>
       </div>
       <div className="text-center px-2 py-3 bg-[#bd8c39] text-white  font-bold">
-        © Copyright 2021. All Right Reserved
+        © Copyright 2022. All Right Reserved Quantum Gate
       </div>
     </div>
   );
