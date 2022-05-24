@@ -119,9 +119,7 @@ export const Contact_us: React.FC<{ t: any, company: string }> = ({ t,company })
               <p>{t("location")} :</p>
             </div>
             <p>Al Sadd Royal Plaza</p>
-            <a href="" className="text-[#d8ba71]">
-              link
-            </a>
+         
           </div>
         </div>
       </div>

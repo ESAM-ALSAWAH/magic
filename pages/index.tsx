@@ -42,18 +42,19 @@ const Home: NextPage = () => {
               <p className="leading-loose">
                 {t("about_us_description")}
               </p>
-              <button
-                className="hover:scale-[1.1] transition-all ease-in"
-                style={{
+              <Link
+                href='/about'
+
+              >
+                <a className="hover:scale-[1.1] transition-all ease-in" style={{
                   background: "linear-gradient(to right,#d8ba71 ,#c6bf78,#fff)",
                   color: "#fff",
                   width: "fit-content",
                   padding: ".5rem 3rem",
                   fontWeight: "bold",
-                }}
-              >
-                {t("learn_more")}
-              </button>
+                }}>
+                  {t("learn_more")}
+                </a></Link>
             </div>
             <div className="relative order-1 sm:order-2 w-[100%] sm:w-[30%] z-10" data-aos="zoom-in" data-aos-duration="1000">
               <img
@@ -80,7 +81,7 @@ const Home: NextPage = () => {
 
       <div className="provideds-section overflow-hidden relative py-20 bg-[#040D20] text-white" >
         <img src="/images/shape_dots.svg" alt="shapeDOTS" className="absolute -bottom-20 right-[-100px]" />
-        <div className=" container gap-y-10 flex flex-col sm:flex-row sm:justify-around">
+        <div className=" container gap-y-10 flex flex-col sm:flex-row sm:justify-around items-center">
           <div className="flex flex-col" data-aos="fade-up"
             data-aos-duration="3000">
             <h6 className="text-white">{t("section_title_1")} </h6>
@@ -90,22 +91,9 @@ const Home: NextPage = () => {
               <li className="my-4">{t("section_list_2")}</li>
               <li>{t("section_list_3")}</li>
             </ul>
-
-            <button
-              className="hover:scale-[1.1] my-5 transition-all ease-in"
-              style={{
-                background: "linear-gradient(to right,#d8ba71 ,#c6bf78,#fff)",
-                color: "#fff",
-                width: "fit-content",
-                padding: ".5rem 3rem",
-                fontWeight: "bold",
-              }}
-            >
-              {t("learn_more")}
-            </button>
           </div>
           <div className="max-w-[100%] sm:max-w-[100%]" data-aos="zoom-in" data-aos-duration="1000">
-            <img src="/images/home/provide.png" alt="images" className='w-[200%]' />
+            <img src="/images/home/provide.png" alt="images" className='max-w-[650px]' />
           </div>
 
         </div>
@@ -120,7 +108,7 @@ const Home: NextPage = () => {
               <img src="/images/home/realestate.png" alt="card_image" className=" w-[100%] z-20 shadow-lg" />
               <div className="inside-card bg-white absolute  text-center py-10 top-0 right-0  bottom-0 w-[100%]  -z-10">
                 <h5 className="text-[#2747a5]">Magic Real Estate</h5>
-                <p className="text-[#000]">{t("companie_1")}</p>
+                <p className="text-[#000] text-lg px-2">{t("companie_1")}</p>
               </div>
 
             </div>
@@ -128,7 +116,7 @@ const Home: NextPage = () => {
               <img src="/images/home/specialone-clean.png" alt="card_image" className=" w-[100%] z-20 shadow-lg" />
               <div className="inside-card bg-white absolute  text-center py-10 top-0 left-0  bottom-0 w-[100%]  -z-10">
                 <h5 className="text-[#2747a5]">Special One</h5>
-                <p className="text-[#000]">{t("companie_2")}</p>
+                <p className="text-[#000] text-lg px-2">{t("companie_2")}</p>
               </div>
 
             </div>
@@ -235,8 +223,8 @@ const Home: NextPage = () => {
                 </button>
               </form>
             </div>
-            <div className="flex flex-col py-4 px-8 max-w-[471px] sm:self-end sm:text-center gap-y-3 h-fit">
-              <div className="flex flex-row items-center gap-x-2 text-white">
+            <div className="flex flex-col py-4 px-8 max-w-[471px] sm:self-end sm:text-center gap-y-3 h-fit mb-6">
+              <div className="flex flex-row items-center gap-x-2 text-white text-2xl ">
                 <img
                   src="/images/icons/location.png"
                   alt="location"
@@ -244,12 +232,11 @@ const Home: NextPage = () => {
                   height={20}
                   loading="lazy"
                 />
-                <p className="h-[10px]">{t("location")}</p>
+                <p className="h-[10px] text-2xl">{t("location")}</p>
               </div>
-              <p className="text-white">Al Sadd Royal Plaza</p>
-              <a href="" className="text-[#d8ba71]">
-                link
-              </a>
+              <p className="text-white text-2xl">Al Sadd Royal Plaza</p>
+             
+            
             </div>
           </div>
         </div>

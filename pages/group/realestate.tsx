@@ -104,25 +104,87 @@ const Realestate: NextPage = () => {
         <div className="container">
 
           <h3 className="text-[#0F1B3E]">Our Partners</h3>
-          <div className="bg-[#fff6e7] py-10  gap-y-10 flex flex-col">
+          <div className="bg-[#fff6e7] py-10  gap-y-10 flex flex-col w-full">
+            <div className="flex flex-wrap  justify-around sm:justify-center sm:flex-row sm:gap-x-20 gap-y-10 m-auto w-[90%]">
+              <div className=" max-w-[25%] min-w-[40%] sm:min-w-[300px] w-full text-center flex flex-col items-center gap-y-4">
+                <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
+
+                <div className="relative w-[100px] h-[60px] text-white grid items-center ">
+                  <img src="/images/rectangle_gold.svg" alt="shape" className=" absolute " />
+                  <p className="z-20">1</p>
+                </div>
+              </div>
+              <div className="max-w-[25%] min-w-[40%] sm:min-w-[300px] w-full text-center flex flex-col items-center gap-y-4">
+                <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
+
+                <div className="relative w-[100px] h-[60px] text-white grid items-center ">
+                  <img src="/images/rectangle_gold.svg" alt="shape" className=" absolute " />
+                  <p className="z-20">2</p>
+                </div>
+              </div>
+              <div className="  max-w-[25%] min-w-[300px] w-full text-center flex flex-col items-center gap-y-4">
+                <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
+
+                <div className="relative w-[100px] h-[60px] text-white grid items-center ">
+                  <img src="/images/rectangle_gold.svg" alt="shape" className=" absolute " />
+                  <p className="z-20">3</p>
+                </div>
+              </div>
+
+
+            </div>
+            <div className="flex flex-col  justify-center sm:flex-row sm:gap-x-20 gap-y-10 m-auto w-[90%] ">
+              <div className="  max-w-[25%] w-full text-center flex flex-col items-center gap-y-4">
+                <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
+
+                <div className="relative w-[100px] h-[60px] text-black grid items-center ">
+                  <img src="/images/rectangle_white.svg" alt="shape" className=" absolute " />
+                  <p className="z-20">4</p>
+                </div>
+              </div>
+              <div className="  max-w-[25%] w-full text-center flex flex-col items-center gap-y-4">
+                <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
+
+                <div className="relative w-[100px] h-[60px] text-black grid items-center ">
+                  <img src="/images/rectangle_white.svg" alt="shape" className=" absolute " />
+                  <p className="z-20">5</p>
+                </div>
+              </div>
+              <div className="  max-w-[25%] w-full text-center flex flex-col items-center gap-y-4">
+                <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
+
+                <div className="relative w-[100px] h-[60px] text-black grid items-center ">
+                  <img src="/images/rectangle_white.svg" alt="shape" className=" absolute " />
+                  <p className="z-20">6</p>
+                </div>
+              </div>
+            </div>
             <div className="flex flex-col  justify-center sm:flex-row sm:gap-x-20 gap-y-10 m-auto w-[90%]">
               <div className="  max-w-[25%] w-full text-center flex flex-col items-center gap-y-4">
                 <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
-                
-                <div className="w-[50px] h-[50px] bg-[#E9D8AB] text-white grid items-center ">1</div>
+
+                <div className="relative w-[100px] h-[60px] text-white grid items-center ">
+                  <img src="/images/rectangle_gold.svg" alt="shape" className=" absolute " />
+                  <p className="z-20">7</p>
+                </div>
               </div>
-              <div className="box-partners bg-white py-11 px-3 text-black max-w-[25%] w-full text-center">capstone real estate</div>
-              <div className="box-partners bg-white py-11 px-3 text-black max-w-[25%] w-full text-center">capstone real estate</div>
-            </div>
-            <div className="flex flex-row sm:gap-x-20 gap-y-10 m-auto ">
-              <div className="box-partners bg-white py-11 px-3 text-black max-w-[300px] w-full text-center">capstone real estate</div>
-              <div className="box-partners bg-white py-11 px-3 text-black max-w-[300px] w-full text-center">capstone real estate</div>
-              <div className="box-partners bg-white py-11 px-3 text-black max-w-[300px] w-full text-center">capstone real estate</div>
-            </div>
-            <div className="flex flex-row sm:gap-x-20 gap-y-10 m-auto">
-              <div className="box-partners bg-white py-11 px-3 text-black max-w-[300px] w-full text-center">capstone real estate</div>
-              <div className="box-partners bg-white py-11 px-3 text-black max-w-[300px] w-full text-center">capstone real estate</div>
-              <div className="box-partners bg-white py-11 px-3 text-black max-w-[300px] w-full text-center">capstone real estate</div>
+              <div className="  max-w-[25%] w-full text-center flex flex-col items-center gap-y-4">
+                <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
+
+                <div className="relative w-[100px] h-[60px] text-white grid items-center ">
+                  <img src="/images/rectangle_gold.svg" alt="shape" className=" absolute " />
+                  <p className="z-20">8</p>
+                </div>
+              </div>
+              <div className="  max-w-[25%] w-full text-center flex flex-col items-center gap-y-4">
+                <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
+
+                <div className="relative w-[100px] h-[60px] text-white grid items-center ">
+                  <img src="/images/rectangle_gold.svg" alt="shape" className=" absolute " />
+                  <p className="z-20">9</p>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
