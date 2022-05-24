@@ -9,14 +9,22 @@ import {
   MiniCard,
   DynamicHero,
   SwiperImage,
+  
 } from "@components";
 import { Sparkling_services, Premium_Services } from "@constants";
 import useTranslation from "next-translate/useTranslation";
+
+const HeroBackground=[
+  "/images/specialone/hero/1.png",
+  "/images/specialone/hero/2.png",
+  "/images/specialone/hero/3.png",
+]
 const Section1_Images = [
   "/images/specialone/section1/1.png",
   "/images/specialone/section1/2.png",
   "/images/specialone/section1/3.png",
 ];
+
 const Social_Link_Specialone = {
   facebook: "https://www.facebook.com/special.one.qa/?ref=pages_you_manage",
   instagram: "https://www.instagram.com/special.one.qa/",
@@ -41,7 +49,7 @@ const Specialone: NextPage = () => {
         title="special One"
         title2={t("hero_title2")}
         description={t("hero_description")}
-        images={Section1_Images}
+        images={HeroBackground}
       />
         <DynamicSection
         images={Section1_Images}
@@ -105,21 +113,21 @@ const Specialone: NextPage = () => {
         <SwiperImage>
           <SwiperSlide>
             <img
-              src="/images/specialone/why_us.png"
+              src="/images/specialone/slider/1.png"
               alt="why us"
               loading="lazy"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="/images/specialone/why_us.png"
+              src="/images/specialone/slider/2.png"
               alt="why us"
               loading="lazy"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="/images/specialone/why_us.png"
+              src="/images/specialone/slider/3.png"
               alt="why us"
               loading="lazy"
             />
@@ -138,7 +146,7 @@ const Specialone: NextPage = () => {
       <Why_us
         title={t("why_title")}
         title2={t("why_title2")}
-        image="/images/specialone/why_us.png"
+        image="/images/specialone/why-us.png"
       >
         <p>{t("why_description")}</p>
       </Why_us>

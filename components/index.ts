@@ -7,4 +7,5 @@ export * from './Dynamic Hero'
 export * from './mini card'
 
 export * from './swiper'
+export * from './swiper section'
 export * from './Hero Home'

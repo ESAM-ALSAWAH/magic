@@ -35,7 +35,7 @@ const Home: NextPage = () => {
       <Navbar logo="/images/logo.svg" />
       <HeroHome text={t("hero")} />
       <div className="about-us bg-[#040D20] overflow-hidden">
-        <div className="container py-10">
+        <div className="container py-10 px-0 sm:px-6">
           <h3 className="sm:mx-[5px] p-0 sm:px-8  text-white mb-[100px] sm:my-0">{t("about_us")}</h3>
           <div className="flex flex-col sm:flex-row sm:justify-between items-center my-10 z-10">
             <div className="order-2 sm:order-1 max-w-[500px] w-[100%] sm:w-[50%] h-[fit-content] p-10 shadow-sm   text-white" data-aos="fade-up"
@@ -93,8 +93,8 @@ const Home: NextPage = () => {
               <li>{t("section_list_3")}</li>
             </ul>
           </div>
-          <div className="max-w-[100%] sm:max-w-[100%]" data-aos="zoom-in" data-aos-duration="1000">
-            <img src="/images/home/provide.png" alt="images" className='max-w-[650px]' />
+          <div className="max-w-[100%] md:max-w-[100%]" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="/images/home/provide.png" alt="images" className='max-w-[650px] w-[100%]' />
           </div>
 
         </div>
@@ -102,7 +102,7 @@ const Home: NextPage = () => {
 
       <div className="group-companies overflow-hidden relative py-20 bg-[#040D20]">
         <img src="/images/shape_dots.svg" alt="shapeDOTS" className="absolute bottom-0 left-[-100px]" />
-        <div className="container py-20">
+        <div className="container py-20 px-0 sm:px-6">
           <h2 className="text-white capitalize">{t("our_group")}</h2>
           <div className="ltr flex flex-col py-10 gap-y-10">
             <div className="card-home-1 relative min-w-[250px] min-h-[250px] max-w-[400px] max-h-[400px] w-[100%] h-[100%] cursor-pointer z-30">

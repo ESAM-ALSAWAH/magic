@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import Image from "next/image";
+
 import Head from "next/head";
 import { Navbar, Footer } from "@ui";
 import {
@@ -8,8 +8,10 @@ import {
   Why_us,
   ServiceCard,
   DynamicHero,
+  SwiperSection
 } from "@components";
 import { services } from "@constants";
+
 import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
 const Section1_Images = [
@@ -35,9 +37,9 @@ const Realestate: NextPage = () => {
   return (
     <>
       <Head>
-      <title>{t("meta_title")}</title>
-        
-        <meta name="description" content={t("meta_description")}/>
+        <title>{t("meta_title")}</title>
+
+        <meta name="description" content={t("meta_description")} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar logo="/images/real_estate_logo.svg" />
@@ -67,11 +69,12 @@ const Realestate: NextPage = () => {
           ))}
         </div>
       </div>
+      
+      <SwiperSection />
 
 
 
-
-      <div className="container flex flex-col md:flex-row gap-x-10 gap-y-8 md:justify-between my-20 ">
+      <div className="container flex flex-col md:flex-row gap-x-10 gap-y-8 md:justify-start my-20 ">
         <div className=" flex flex-col max-w-full md:max-w-[40%]  gap-y-10">
           <div className="max-w-[100%] max-h-[300px] overflow-hidden">
             <img src="/images/realestate/1.png" alt="image" className="w-[80%] h-[100%] object-cover m-auto md:m-0" />
@@ -141,7 +144,7 @@ const Realestate: NextPage = () => {
 
 
             </div>
-            <div className="flex flex-wrap  justify-around sm:justify-center sm:flex-row sm:gap-x-20 gap-y-10 m-auto w-[90%]">
+            <div className="flex flex-wrap  justify-around sm:justify-end sm:flex-row sm:gap-x-20 gap-y-10 m-auto w-[90%]">
               <div className="max-w-[25%] min-w-[40%] sm:min-w-[300px] w-full text-center flex flex-col items-center gap-y-4">
                 <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
 
@@ -167,8 +170,8 @@ const Realestate: NextPage = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col  justify-center sm:flex-row sm:gap-x-20 gap-y-10 m-auto w-[90%]">
-              <div className="  max-w-[25%] w-full text-center flex flex-col items-center gap-y-4">
+            <div className="flex flex-wrap  justify-around sm:justify-center sm:flex-row sm:gap-x-20 gap-y-10 m-auto w-[90%]">
+              <div className="max-w-[25%] min-w-[40%] sm:min-w-[300px] w-full text-center flex flex-col items-center gap-y-4">
                 <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
 
                 <div className="relative w-[100px] h-[60px] text-white grid items-center ">
@@ -176,7 +179,7 @@ const Realestate: NextPage = () => {
                   <p className="z-20">7</p>
                 </div>
               </div>
-              <div className="  max-w-[25%] w-full text-center flex flex-col items-center gap-y-4">
+              <div className="max-w-[25%] min-w-[40%] sm:min-w-[300px] w-full text-center flex flex-col items-center gap-y-4">
                 <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
 
                 <div className="relative w-[100px] h-[60px] text-white grid items-center ">
@@ -210,7 +213,7 @@ const Realestate: NextPage = () => {
           <li>{t("why_list_3")}</li>
         </ul>
       </Why_us>
-      <Contact_us t={t} company="Real estate" Social_Link={Social_Link_Realestate}/>
+      <Contact_us t={t} company="Real estate" Social_Link={Social_Link_Realestate} />
       <Footer logo="/images/real_estate_logo.svg" />
     </>
   );
