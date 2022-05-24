@@ -66,7 +66,7 @@ export const Footer: React.FC<props> = ({ logo }) => {
                 <AiFillLinkedin /> Linked In
               </a>
             </Link>
-            <Link href="https://www.snapchat.com/add/specialone.qa?share_id=zYnEbxA1K0w&locale=en-US" passHref={true}>
+            <Link href="https://www.snapchat.com/add/magicgroup.qa?share_id=zYnEbxA1K0w&locale=en-US" passHref={true}>
               <a className="flex flex-row items-center gap-x-3">
                 <BsSnapchat /> snapchat
               </a>

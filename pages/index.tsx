@@ -150,7 +150,7 @@ const Home: NextPage = () => {
                   loading="lazy"
                 />
               </a></Link>
-            <Link href="https://www.snapchat.com/add/specialone.qa?share_id=zYnEbxA1K0w&locale=en-US" passHref={true}>
+            <Link href="https://www.snapchat.com/add/magicgroup.qa?share_id=zYnEbxA1K0w&locale=en-US" passHref={true}>
               <a data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="600">
                 <img
                   src="/images/icons/snapchat.png"
@@ -235,7 +235,7 @@ const Home: NextPage = () => {
               <Link href="" passHref={true}>
                 <a className="text-white text-2xl">
 
-                  Al Sadd Royal Plaza, Doha Qatar
+                  Al Sadd Royal Plaza, Doha, Qatar
                 </a>
               </Link>
 

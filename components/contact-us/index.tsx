@@ -2,9 +2,10 @@ import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-export const Contact_us: React.FC<{ t: any, company: string }> = ({ t,company }) => {
+import Link from "next/link";
+export const Contact_us: React.FC<{ t: any, company: string, Social_Link?: any }> = ({ t, company, Social_Link }) => {
   const form = useRef<any>();
-
+  const { facebook, instagram, snapchat, linkedin, twiter } = Social_Link;
   const handleSubmit = (e: any): void => {
     e.preventDefault();
 
@@ -26,46 +27,55 @@ export const Contact_us: React.FC<{ t: any, company: string }> = ({ t,company })
       <div className="relative py-4">
         <h6 className="text-center">{t("contact_us_title")}</h6>
         <div className="flex flex-row gap-x-6 justify-center mt-7 ">
-          <a href="" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
-            <img
-              src="/images/icons/twiter.png"
-              alt="twiter"
-              className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
-              loading="lazy"
-            />
-          </a>
-          <a href="" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="300">
-            <img
-              src="/images/icons/instgrame.png"
-              alt="instagram"
-              className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
-              loading="lazy"
-            />
-          </a>
-          <a href="" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="600">
-            <img
-              src="/images/icons/snapchat.png"
-              alt="snapchat"
-              className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
-              loading="lazy"
-            />
-          </a>
-          <a href="" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="900">
-            <img
-              src="/images/icons/linkedin.png"
-              alt="linkedin"
-              className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
-              loading="lazy"
-            />
-          </a>
-          <a href="" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="1200">
-            <img
-              src="/images/icons/facebook.png"
-              alt="facebook"
-              className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
-              loading="lazy"
-            />
-          </a>
+          <Link href={twiter} passHref={true}>
+            <a data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+              <img
+                src="/images/icons/twiter.png"
+                alt="twiter"
+                className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+                loading="lazy"
+              />
+            </a>
+          </Link>
+          <Link href={instagram} passHref={true}>
+            <a data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="300">
+              <img
+                src="/images/icons/instgrame.png"
+                alt="instagram"
+                className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+                loading="lazy"
+              />
+            </a>
+          </Link>
+          <Link href={snapchat} passHref={true}>
+            <a data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="600">
+              <img
+                src="/images/icons/snapchat.png"
+                alt="snapchat"
+                className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+                loading="lazy"
+              />
+            </a></Link>
+          <Link href={linkedin} passHref={true}>
+            <a data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="900">
+              <img
+                src="/images/icons/linkedin.png"
+                alt="linkedin"
+                className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+                loading="lazy"
+              />
+            </a>
+          </Link>
+          <Link href={facebook} passHref={true}>
+            <a  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="1200">
+              <img
+                src="/images/icons/facebook.png"
+                alt="facebook"
+                className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+                loading="lazy"
+              />
+            </a>
+          </Link>
         </div>
         <img
           src="/images/group_map_right.png"
@@ -119,7 +129,7 @@ export const Contact_us: React.FC<{ t: any, company: string }> = ({ t,company })
               <p>{t("location")} :</p>
             </div>
             <p>Al Sadd Royal Plaza</p>
-         
+
           </div>
         </div>
       </div>

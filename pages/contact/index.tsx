@@ -119,6 +119,20 @@ const Social_Link_magic = {
   linkedin: "https://www.linkedin.com/company/magic-group-qa/about/?viewAsMember=true",
   twiter: "https://twitter.com/MagicGroup8",
 };
+const Social_Link_Realestate = {
+  facebook: "https://www.facebook.com/Magic.realestate.qa/?ref=pages_you_manage",
+  instagram: "https://www.instagram.com/magic.realestate.qa/",
+  snapchat: "https://www.snapchat.com/add/magicrealestate?share_id=shpUXVVcmWc&locale=en-US",
+  linkedin: "https://www.linkedin.com/company/magic-realestate-qa/about/?viewAsMember=true",
+  twiter: "https://twitter.com/MagicRealEstat1",
+};
+const Social_Link_Specialone = {
+  facebook: "https://www.facebook.com/special.one.qa/?ref=pages_you_manage",
+  instagram: "https://www.instagram.com/special.one.qa/",
+  snapchat: "https://www.snapchat.com/add/specialone.qa?share_id=zYnEbxA1K0w&locale=en-US",
+  linkedin: "https://www.linkedin.com/company/special-one-qa/about/?viewAsMember=true",
+  twiter: "https://twitter.com/Special_one_qa",
+};
 const Contact = () => {
   const { t } = useTranslation("contact_us");
   return (
@@ -166,7 +180,7 @@ const Contact = () => {
                 }}
               />
             </div>
-            <FormContact Social_Link_magic={Social_Link_magic} t={t} company="Special One" />
+            <FormContact Social_Link_magic={Social_Link_Specialone} t={t} company="Special One" />
           </div>
           <div className="flex flex-col order-2 sm:order-1 mx-0  sm:mx-4">
             <div className="m-0 flex items-center justify-around">
@@ -180,7 +194,7 @@ const Contact = () => {
                 }}
               />
             </div>
-            <FormContact Social_Link_magic={Social_Link_magic} t={t} company="Real estate" />
+            <FormContact Social_Link_magic={Social_Link_Realestate} t={t} company="Real estate" />
           </div>
 
           <div className="absolute -bottom-16 left-[50%] -translate-x-[50%] text-center bg-white  py-4 px-8 shadow-lg min-w-[200px] ">

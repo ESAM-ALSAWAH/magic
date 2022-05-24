@@ -22,6 +22,13 @@ const hero_Images = [
   "/images/realestate/hero/2.png",
   "/images/specialone/section1/3.png",
 ];
+const Social_Link_Realestate = {
+  facebook: "https://www.facebook.com/Magic.realestate.qa/?ref=pages_you_manage",
+  instagram: "https://www.instagram.com/magic.realestate.qa/",
+  snapchat: "https://www.snapchat.com/add/magicrealestate?share_id=shpUXVVcmWc&locale=en-US",
+  linkedin: "https://www.linkedin.com/company/magic-realestate-qa/about/?viewAsMember=true",
+  twiter: "https://twitter.com/MagicRealEstat1",
+};
 const Realestate: NextPage = () => {
   const { t, lang } = useTranslation("realestate");
 
@@ -134,8 +141,8 @@ const Realestate: NextPage = () => {
 
 
             </div>
-            <div className="flex flex-col  justify-center sm:flex-row sm:gap-x-20 gap-y-10 m-auto w-[90%] ">
-              <div className="  max-w-[25%] w-full text-center flex flex-col items-center gap-y-4">
+            <div className="flex flex-wrap  justify-around sm:justify-center sm:flex-row sm:gap-x-20 gap-y-10 m-auto w-[90%]">
+              <div className="max-w-[25%] min-w-[40%] sm:min-w-[300px] w-full text-center flex flex-col items-center gap-y-4">
                 <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
 
                 <div className="relative w-[100px] h-[60px] text-black grid items-center ">
@@ -143,7 +150,7 @@ const Realestate: NextPage = () => {
                   <p className="z-20">4</p>
                 </div>
               </div>
-              <div className="  max-w-[25%] w-full text-center flex flex-col items-center gap-y-4">
+              <div className="max-w-[25%] min-w-[40%] sm:min-w-[300px] w-full text-center flex flex-col items-center gap-y-4">
                 <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
 
                 <div className="relative w-[100px] h-[60px] text-black grid items-center ">
@@ -203,7 +210,7 @@ const Realestate: NextPage = () => {
           <li>{t("why_list_3")}</li>
         </ul>
       </Why_us>
-      <Contact_us t={t} company="Real estate" />
+      <Contact_us t={t} company="Real estate" Social_Link={Social_Link_Realestate}/>
       <Footer logo="/images/real_estate_logo.svg" />
     </>
   );
