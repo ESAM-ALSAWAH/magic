@@ -126,7 +126,8 @@ const Realestate: NextPage = () => {
                 </div>
               </div>
               <div className="max-w-[25%] min-w-[40%] sm:min-w-[300px] w-full text-center flex flex-col items-center gap-y-4">
-                <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
+                <div className=" box-partners bg-white py-11 px-3 text-black">Kaizen real estate
+</div>
 
                 <div className="relative w-[100px] h-[60px] text-white grid items-center ">
                   <img src="/images/rectangle_gold.svg" alt="shape" className=" absolute " />
@@ -134,7 +135,7 @@ const Realestate: NextPage = () => {
                 </div>
               </div>
               <div className="  max-w-[25%] min-w-[300px] w-full text-center flex flex-col items-center gap-y-4">
-                <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
+                <div className=" box-partners bg-white py-11 px-3 text-black">Shorek real estate</div>
 
                 <div className="relative w-[100px] h-[60px] text-white grid items-center ">
                   <img src="/images/rectangle_gold.svg" alt="shape" className=" absolute " />
@@ -146,7 +147,7 @@ const Realestate: NextPage = () => {
             </div>
             <div className="flex flex-wrap  justify-around sm:justify-end sm:flex-row sm:gap-x-20 gap-y-10 m-auto w-[90%]">
               <div className="max-w-[25%] min-w-[40%] sm:min-w-[300px] w-full text-center flex flex-col items-center gap-y-4">
-                <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
+                <div className=" box-partners bg-white py-11 px-3 text-black">Debaj real estate</div>
 
                 <div className="relative w-[100px] h-[60px] text-black grid items-center ">
                   <img src="/images/rectangle_white.svg" alt="shape" className=" absolute " />
@@ -154,7 +155,7 @@ const Realestate: NextPage = () => {
                 </div>
               </div>
               <div className="max-w-[25%] min-w-[40%] sm:min-w-[300px] w-full text-center flex flex-col items-center gap-y-4">
-                <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
+                <div className=" box-partners bg-white py-11 px-3 text-black">Q Finder</div>
 
                 <div className="relative w-[100px] h-[60px] text-black grid items-center ">
                   <img src="/images/rectangle_white.svg" alt="shape" className=" absolute " />
@@ -162,7 +163,7 @@ const Realestate: NextPage = () => {
                 </div>
               </div>
               <div className="  max-w-[25%] w-full text-center flex flex-col items-center gap-y-4">
-                <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
+                <div className=" box-partners bg-white py-11 px-3 text-black">La luna real estate</div>
 
                 <div className="relative w-[100px] h-[60px] text-black grid items-center ">
                   <img src="/images/rectangle_white.svg" alt="shape" className=" absolute " />
@@ -172,7 +173,7 @@ const Realestate: NextPage = () => {
             </div>
             <div className="flex flex-wrap  justify-around sm:justify-center sm:flex-row sm:gap-x-20 gap-y-10 m-auto w-[90%]">
               <div className="max-w-[25%] min-w-[40%] sm:min-w-[300px] w-full text-center flex flex-col items-center gap-y-4">
-                <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
+                <div className=" box-partners bg-white py-11 px-3 text-black">Retaj real estate</div>
 
                 <div className="relative w-[100px] h-[60px] text-white grid items-center ">
                   <img src="/images/rectangle_gold.svg" alt="shape" className=" absolute " />
@@ -180,7 +181,7 @@ const Realestate: NextPage = () => {
                 </div>
               </div>
               <div className="max-w-[25%] min-w-[40%] sm:min-w-[300px] w-full text-center flex flex-col items-center gap-y-4">
-                <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
+                <div className=" box-partners bg-white py-11 px-3 text-black">Square real estate</div>
 
                 <div className="relative w-[100px] h-[60px] text-white grid items-center ">
                   <img src="/images/rectangle_gold.svg" alt="shape" className=" absolute " />
@@ -188,7 +189,7 @@ const Realestate: NextPage = () => {
                 </div>
               </div>
               <div className="  max-w-[25%] w-full text-center flex flex-col items-center gap-y-4">
-                <div className=" box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
+                <div className=" box-partners bg-white py-11 px-3 text-black">Al Ahli group for real estate project</div>
 
                 <div className="relative w-[100px] h-[60px] text-white grid items-center ">
                   <img src="/images/rectangle_gold.svg" alt="shape" className=" absolute " />
