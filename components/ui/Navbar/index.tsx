@@ -33,7 +33,7 @@ const NavMobile: React.FC<props> = ({ active, t, lang }) => {
         !active && "hide"
       )}
     >
-      <div className="absolute inset-0 "></div>
+      
       <div className="flex items-center justify-between">
         <Image src="/images/logo.svg" width="50px" height="50px" />
       </div>
