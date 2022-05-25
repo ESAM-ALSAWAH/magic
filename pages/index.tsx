@@ -137,7 +137,7 @@ const Home: NextPage = () => {
                 <img
                   src="/images/icons/twiter.png"
                   alt="twiter"
-                  className="w-[20px] h-[20px] sm:h-[80px] sm:w-[80px] "
+                  className="w-[20px] h-[20px] sm:h-[50px] sm:w-[50px] "
                   loading="lazy"
                 />
               </a>
@@ -147,7 +147,7 @@ const Home: NextPage = () => {
                 <img
                   src="/images/icons/instgrame.png"
                   alt="instagram"
-                  className="w-[20px] h-[20px] sm:h-[80px] sm:w-[80px] "
+                  className="w-[20px] h-[20px] sm:h-[50px] sm:w-[50px] "
                   loading="lazy"
                 />
               </a></Link>
@@ -156,7 +156,7 @@ const Home: NextPage = () => {
                 <img
                   src="/images/icons/snapchat.png"
                   alt="snapchat"
-                  className="w-[20px] h-[20px] sm:h-[80px] sm:w-[80px] "
+                  className="w-[20px] h-[20px] sm:h-[50px] sm:w-[50px] "
                   loading="lazy"
                 />
               </a></Link>
@@ -165,7 +165,7 @@ const Home: NextPage = () => {
                 <img
                   src="/images/icons/linkedin.png"
                   alt="linkedin"
-                  className="w-[20px] h-[20px] sm:h-[80px] sm:w-[80px] "
+                  className="w-[20px] h-[20px] sm:h-[50px] sm:w-[50px] "
                   loading="lazy"
                 />
               </a>
@@ -175,7 +175,7 @@ const Home: NextPage = () => {
                 <img
                   src="/images/icons/facebook.png"
                   alt="facebook"
-                  className="w-[20px] h-[20px] sm:h-[80px] sm:w-[80px] "
+                  className="w-[20px] h-[20px] sm:h-[50px] sm:w-[50px] "
                   loading="lazy"
                 />
               </a>
@@ -233,8 +233,8 @@ const Home: NextPage = () => {
                 />
                 <p className="h-[10px] text-2xl">{t("location")}</p>
               </div>
-              <Link href={mapLink} passHref={true}>
-                <a className="text-white text-2xl">
+              <Link href={mapLink} passHref={true} target="_blank">
+                <a target="_blank" className="text-white text-2xl">
 
                   Al Sadd Royal Plaza, Doha, Qatar
                 </a>

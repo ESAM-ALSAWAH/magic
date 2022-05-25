@@ -33,7 +33,7 @@ export const Contact_us: React.FC<{ t: any, company: string, Social_Link?: any }
               <img
                 src="/images/icons/twiter.png"
                 alt="twiter"
-                className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+                className="w-[30px] h-[30px] sm:h-[50px] sm:w-[50px] "
                 loading="lazy"
               />
             </a>
@@ -43,7 +43,7 @@ export const Contact_us: React.FC<{ t: any, company: string, Social_Link?: any }
               <img
                 src="/images/icons/instgrame.png"
                 alt="instagram"
-                className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+                className="w-[30px] h-[30px] sm:h-[50px] sm:w-[50px] "
                 loading="lazy"
               />
             </a>
@@ -53,7 +53,7 @@ export const Contact_us: React.FC<{ t: any, company: string, Social_Link?: any }
               <img
                 src="/images/icons/snapchat.png"
                 alt="snapchat"
-                className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+                className="w-[30px] h-[30px] sm:h-[50px] sm:w-[50px] "
                 loading="lazy"
               />
             </a></Link>
@@ -62,7 +62,7 @@ export const Contact_us: React.FC<{ t: any, company: string, Social_Link?: any }
               <img
                 src="/images/icons/linkedin.png"
                 alt="linkedin"
-                className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+                className="w-[30px] h-[30px] sm:h-[50px] sm:w-[50px] "
                 loading="lazy"
               />
             </a>
@@ -72,7 +72,7 @@ export const Contact_us: React.FC<{ t: any, company: string, Social_Link?: any }
               <img
                 src="/images/icons/facebook.png"
                 alt="facebook"
-                className="w-[30px] h-[30px] sm:h-[80px] sm:w-[80px] "
+                className="w-[30px] h-[30px] sm:h-[50px] sm:w-[50px] "
                 loading="lazy"
               />
             </a>
@@ -128,15 +128,13 @@ export const Contact_us: React.FC<{ t: any, company: string, Social_Link?: any }
                 loading="lazy"
               />
               <Link href={mapLink} passHref={true} target="_blank">
-                <a className="text-[
+                <a  target="_blank" className="text-[
                   #0f1b3e] text-lg">
 
                   Al Sadd Royal Plaza, Doha, Qatar
                 </a>
               </Link>
             </div>
-
-
           </div>
         </div>
       </div>

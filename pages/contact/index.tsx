@@ -1,6 +1,7 @@
-import React,{useRef} from "react";
+import React, { useRef } from "react";
 import Head from "next/head";
 import { Navbar, Footer } from "@ui";
+import { mapLink } from '@constants'
 import Link from "next/link";
 import emailjs from '@emailjs/browser';
 import {
@@ -14,9 +15,9 @@ import useTranslation from "next-translate/useTranslation";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const FormContact: React.FC<any> = (props) => {
-  const { Social_Link_magic, company,t } = props;
+  const { Social_Link_magic, company, t } = props;
   const {
-    
+
     facebook,
     instagram,
     snapchat,
@@ -27,16 +28,16 @@ const FormContact: React.FC<any> = (props) => {
   const handleSubmit = (e: any): void => {
     e.preventDefault();
     emailjs.sendForm('service_l60tiwf', 'template_nlpgglg', form.current, 'ksOP34XIYWzs5XwUw')
-    .then((result) => {
-      toast.success(result.text);
-      form.current.reset();
-    }, (error) => {
-      toast.error(error.text);
-    });
+      .then((result) => {
+        toast.success(result.text);
+        form.current.reset();
+      }, (error) => {
+        toast.error(error.text);
+      });
   }
   return (
     <form ref={form} onSubmit={handleSubmit} className="flex flex-col py-4 px-4 sm:px-8 max-w-[500px] w-[100%] bg-white gap-y-4 m-auto">
-      <input name="company" defaultValue={company} className="hidden"/>
+      <input name="company" defaultValue={company} className="hidden" />
       <div className="flex flex-col gap-y-2">
         <label htmlFor="Full Name">{t("full_name")}</label>
         <input
@@ -160,7 +161,7 @@ const Contact = () => {
                 }}
               />
             </div>
-            <FormContact Social_Link_magic={Social_Link_magic} t={t} company="Magic Group"/>
+            <FormContact Social_Link_magic={Social_Link_magic} t={t} company="Magic Group" />
           </div>
           <img
             src="/images/contact_us.png"
@@ -199,7 +200,11 @@ const Contact = () => {
 
           <div className="absolute -bottom-16 left-[50%] -translate-x-[50%] text-center bg-white  py-4 px-8 shadow-lg min-w-[200px] ">
             <strong>{t("our_location")}</strong>
-            <p>Al Sadd Royal Plaza</p>
+            <Link href={mapLink}>
+              <a className="text-[#d8ba71]">
+              Al Sadd Royal Plaza, Doha, Qatar
+              </a>
+            </Link>
             <Link href="mailto:esam@gmail.com" passHref={true}>
               <a className="text-[#d8ba71]">Email: info@magicgroup.qa</a>
             </Link>
