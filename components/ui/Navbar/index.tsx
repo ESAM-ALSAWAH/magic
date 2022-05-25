@@ -35,7 +35,7 @@ const NavMobile: React.FC<props> = ({ active, t, lang }) => {
     >
       
       <div className="flex items-center justify-between">
-        <Image src="/images/logo.svg" width="50px" height="50px" />
+        <Image src="/images/logo.svg" width="50px" height="50px" alt="image-navbar" />
       </div>
       <div className="flex flex-col mt-12 mb-6 gap-x-6 gap-y-5">
 
@@ -52,7 +52,7 @@ const NavMobile: React.FC<props> = ({ active, t, lang }) => {
         <Link href='/about'>
           <a
             className={clsx(
-              "text-primary-text w-[fit-content] p-2 capitalize",
+              "text-primary-text w-[fit-content] p-2 capitalize ",
               pathname.startsWith('/about') && "text-secondary-bg"
             )}
           >
@@ -96,7 +96,7 @@ export const Navbar: React.FC<propsNavbar> = ({ logo }) => {
   return (
     <nav className="nav ltr bg-primary-bg ">
       <div className="container flex  items-center py-3  gap-y-5 px-2">
-        <Image src={logo} width="100px" height="70px" />
+        <Image src={logo} width="100px" height="70px" alt="image-navbar" />
 
         <div
           className={clsx(
