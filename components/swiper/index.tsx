@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
 export const SwiperImage: React.FC<any> = ({ children }) => {
   return (
-    <div className="max-w-[100%] md:max-w-[50%]  w-[100%] ">
+    <div className="max-w-[100%] md:max-w-[50%]  w-[100%] ltr">
       <Swiper
         navigation={true}
         pagination={{
