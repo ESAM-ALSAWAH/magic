@@ -103,11 +103,11 @@ const Specialone: NextPage = () => {
       </div>
       <div className="container px-8 flex flex-col md:flex-row md:justify-around ">
         <div className="flex flex-col">
-          <h4 className="text-[#f8bf58]">Scope Of Our Work in :</h4>
+          <h4 className="text-[#f8bf58]">{t("work_title")}</h4>
           <ul className="list-disc mt-6 text-xl">
-            <li>Cleaning Services</li>
-            <li className="my-4">Serve All kinds Of Occasions</li>
-            <li>Wedding Caterer</li>
+            <li>{t("work_1")}</li>
+            <li className="my-4">{t("work_2")}</li>
+            <li>{t("work_3")}</li>
           </ul>
         </div>
         <SwiperImage>
