@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
 export const SwiperSection: React.FC<any> = ({ children }) => {
     return (
-        <div className="max-w-[100%] w-[100%] ltr my-5 py-20">
+        <div className="max-w-[100%] w-[100%] ltr my-5 py-20 bg-[#fff6e7]">
             <Swiper
                 navigation={true}
                 pagination={{
@@ -25,7 +25,7 @@ export const SwiperSection: React.FC<any> = ({ children }) => {
                 <SwiperSlide  >
                     <div className="container flex flex-col sm:flex-row sm:justify-between py-10">
                         <div className="flex flex-col gap-y-6">
-                            <h5 className="text-[#f8bf58]">Offers</h5>
+                            {/* <h5 className="text-[#f8bf58]">Offers</h5> */}
                             <h3 className="text-[#0f1b3e]">Villa in Ain Khaled</h3>
                             <ul className="list-disc flex flex-row  items-center gap-x-10 px-10">
                                 <li>10 bedrooms</li>

@@ -17,7 +17,7 @@ import Link from "next/link";
 const Section1_Images = [
   "/images/realestate/section1/1.png",
   "/images/realestate/section1/2.png",
-  "/images/specialone/section1/3.png",
+  "/images/realestate/section1/3.png",
 ];
 const hero_Images = [
   "/images/realestate/hero/1.png",
