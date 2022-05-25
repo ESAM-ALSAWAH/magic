@@ -49,13 +49,13 @@ export const LinkDropdown: React.FC<props> = ({ t, lang }) => {
                         className="font-semibold hover:text-primary-bg cursor-pointer w-[fit-content] ltr"
 
                     >
-                        <Link href='/group/specialone'>Special one</Link>
+                        <Link href='/group/specialone'>Special One</Link>
                     </div>
                     <div
                         className="font-semibold hover:text-primary-bg cursor-pointer w-[fit-content] ltr"
 
                     >
-                        <Link href='/group/realestate'>Real estate</Link>
+                        <Link href='/group/realestate'>Real Estate</Link>
                     </div>
                 </div>
             )}
