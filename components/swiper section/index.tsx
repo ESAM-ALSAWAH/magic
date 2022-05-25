@@ -38,7 +38,7 @@ export const SwiperSection: React.FC<any> = ({ children }) => {
                             </ul>
                         </div>
                         <div className="max-w-[100%] sm:max-w-[50%]">
-                            <img src="/images/realestate/sliderSection/Villa in Ain Khaled.jpg" alt="villa in ain khaled" />
+                            <img src="/images/realestate/sliderSection/Villa in Ain Khaled.png" alt="villa in ain khaled" />
                         </div></div>
                 </SwiperSlide>
                 <SwiperSlide  >
@@ -57,7 +57,7 @@ export const SwiperSection: React.FC<any> = ({ children }) => {
                             </ul>
                         </div>
                         <div className="max-w-[100%] sm:max-w-[50%]">
-                            <img src="/images/realestate/sliderSection/Lusail Townhouses.jpg" alt="Lusail Townhouses" />
+                            <img src="/images/realestate/sliderSection/Lusail Townhouses.png" alt="Lusail Townhouses" />
                         </div></div>
                 </SwiperSlide>
                 <SwiperSlide  >
@@ -76,7 +76,7 @@ export const SwiperSection: React.FC<any> = ({ children }) => {
                             </ul>
                         </div>
                         <div className="max-w-[100%] sm:max-w-[50%]">
-                            <img src="/images/realestate/sliderSection/Al Thumama Villas.jpg" alt="Al Thumama Villas" />
+                            <img src="/images/realestate/sliderSection/Al Thumama Villas.png" alt="Al Thumama Villas" />
                         </div></div>
                 </SwiperSlide>
                 <SwiperSlide  >
@@ -95,7 +95,7 @@ export const SwiperSection: React.FC<any> = ({ children }) => {
                             </ul>
                         </div>
                         <div className="max-w-[100%] sm:max-w-[50%]">
-                            <img src="/images/realestate/sliderSection/Capstone-Website-Rati5.jpg" alt="Capstone-Website" />
+                            <img src="/images/realestate/sliderSection/Capstone-Website-Rati5.png" alt="Capstone-Website" />
                         </div></div>
                 </SwiperSlide>
             </Swiper>
