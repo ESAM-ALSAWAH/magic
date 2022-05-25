@@ -12,7 +12,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   const { pathname } = useRouter();
   const [loading, setLoading] = useState<boolean>(true);
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: true, // whether elements should animate out while scrolling past them
+    });
   }, []);
   useEffect(() => {
     setLoading(true);
