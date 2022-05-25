@@ -148,7 +148,7 @@ const Contact = () => {
         <div className="flex flex-row  items-center sm:justify-start gap-x-2 mb-5">
           <h4 className="titlePage">{t("contact_us")}</h4>
         </div>
-        <div className="container grid grid-cols-1 sm:grid-cols-2 px-1 py-20 sm:px-10 bg-[#fff8f0] relative gap-y-6">
+        <div className="container grid grid-cols-1 sm:grid-cols-2 px-1 py-20 sm:px-10 bg-[#fff8f0] relative gap-y-6 place-items-center">
           <div className="flex flex-col order-2 sm:order-1">
             <div className="m-0 flex items-center justify-around">
               <h5 className="text-[#d8ba71]">{t("contact_magic")}</h5>
@@ -167,7 +167,7 @@ const Contact = () => {
             src="/images/contact_us.png"
             alt="magic"
             loading="lazy"
-            className="order-1 mx-0  sm:mx-4 my-4 sm:mt-0 sm:mb-10  "
+            className="order-1 mx-0  sm:mx-4 my-4 sm:mt-5 sm:mb-10 min-w-[87%] "
           />
           <div className="flex flex-col order-2 sm:order-1">
             <div className="m-0 flex items-center justify-around">
@@ -201,7 +201,7 @@ const Contact = () => {
           <div className="absolute -bottom-16 left-[50%] -translate-x-[50%] text-center bg-white  py-4 px-8 shadow-lg min-w-[200px] ">
             <strong>{t("our_location")}</strong>
             <Link href={mapLink}>
-              <a className="text-[#d8ba71]">
+              <a className="text-[#0f1b3e] block">
               Al Sadd Royal Plaza, Doha, Qatar
               </a>
             </Link>
