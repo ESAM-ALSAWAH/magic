@@ -8,11 +8,15 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
 export const SwiperSection: React.FC<any> = ({ children }) => {
     return (
-        <div className="max-w-[100%] w-[100%] ltr my-20 py-20">
+        <div className="max-w-[100%] w-[100%] ltr my-5 py-20">
             <Swiper
                 navigation={true}
                 pagination={{
                     clickable: true,
+                    
+                }}
+                controller={{
+
                 }}
                 centeredSlides={true}
                 modules={[Pagination, Navigation]}

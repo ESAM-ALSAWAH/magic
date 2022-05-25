@@ -24,14 +24,14 @@ export const LinkDropdown: React.FC<props> = ({ t, lang }) => {
         <div className="relative mx-0">
             <div
                 ref={menuRef}
-                className={clsx("cursor-pointer  w-[fit-content] flex flex-row items-center gap-x-1 text-white mx-0", pathname.startsWith("/group") && "text-secondary-bg")}
+                className={clsx("cursor-pointer  w-[fit-content] flex flex-row items-center gap-x-1 text-white mx-0 p-2", pathname.startsWith("/group") && "text-secondary-bg")}
                 onClick={(e) => setActive((prev) => !prev)}
             >
                 {t("group")}
                 <IoMdArrowDropdown
                     style={{
                         color: "#fff",
-                      
+                        
                         marginTop:"4px",
                         pointerEvents: "none",
                     }}

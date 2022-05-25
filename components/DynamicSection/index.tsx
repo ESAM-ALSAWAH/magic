@@ -20,7 +20,7 @@ export const DynamicSection: React.FC<props> = ({
   id,
 }) => {
   return (
-    <div className=" relative my-40 overflow-hidden" id={id}>
+    <div className=" relative my-10 overflow-hidden" id={id}>
       <img
         src="/images/shape.svg"
         className={clsx(
@@ -32,7 +32,7 @@ export const DynamicSection: React.FC<props> = ({
       />
       <div className="container flex flex-col md:flex-row md:justify-between my-10 px-4 gap-20 z-50">
         <div
-          className="flex flex-row items-center gap-x-10 min-w-w-[200px] flex-1"
+          className="flex flex-row items-center gap-x-5 min-w-w-[200px] flex-1"
           data-aos={"fade-right"}
           data-aos-duration="1000"
         >

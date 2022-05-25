@@ -37,7 +37,7 @@ export const DynamicHero: React.FC<props> = ({
           {button}
         </button>
       </div>
-      <div className="flex flex-col items-center gap-y-10 min-w-[200px] flex-1 order-1 md:order-2  py-6 sm:py-20 px-4">
+      <div className="flex flex-col items-center gap-y-2 min-w-[200px] flex-1 order-1 md:order-2  py-6 sm:py-20 px-4">
         <div className="max-w-[450px] w-[100%] max-h-[250px] overflow-hidden">
           <img
             className="hero-image"

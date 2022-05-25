@@ -73,7 +73,7 @@ const Home: NextPage = () => {
                 style={{
                   zIndex: "-1",
                 }}
-                className="absolute -top-20 right-[-100px]"
+                className="absolute -top-[3.5rem] right-[-100px]"
               />
             </div>
           </div>

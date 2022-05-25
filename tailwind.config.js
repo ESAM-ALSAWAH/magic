@@ -4,12 +4,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+   
     extend: {
       backgroundImage: {
         "contact-us": "url('/images/maps.png')",
         "contact-us-home":"url('/images/contact_background.svg')",
         "about-us":"url('/images/about_us_background.png')"
       },
+
       colors: {
         primary: {
           bg: "#0F1B3E",

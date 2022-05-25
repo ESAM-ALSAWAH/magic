@@ -22,14 +22,14 @@ export const Dropdown: React.FC<props> = ({ t, lang }) => {
     <div className="relative">
       <div
         ref={menuRef}
-        className="cursor-pointer sm:mx-6 w-[fit-content]"
+        className="cursor-pointer sm:mx-6 w-[fit-content] p-2"
         onClick={(e) => setActive((prev) => !prev)}
       >
         <IoLanguageOutline
           style={{
             color: "#fff",
             fontSize: "25px",
-
+            
             pointerEvents: "none",
           }}
         />

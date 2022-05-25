@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
@@ -14,16 +14,26 @@ interface props {
 }
 const NavMobile: React.FC<props> = ({ active, t, lang }) => {
   const { pathname } = useRouter();
+  const NavREF = useRef<any>();
 
+  useEffect(() => {
+    const listner=(e:any)=>{
+
+      console.log(e.target.parentElement)
+    }
+    document.addEventListener("click",listner)
+  }, [])
   return (
     <div
+      ref={NavREF}
       className={clsx(
         "sm:hidden px-4 fixed h-[100vh] bg-primary-bg top-0 ",
-        "mobile-nav z-50",
+        "mobile-nav z-[10000]",
         lang === "ar" && "rtl",
         !active && "hide"
       )}
     >
+      <div className="absolute inset-0 "></div>
       <div className="flex items-center justify-between">
         <Image src="/images/logo.svg" width="50px" height="50px" />
       </div>
@@ -32,7 +42,7 @@ const NavMobile: React.FC<props> = ({ active, t, lang }) => {
         <Link href='/'>
           <a
             className={clsx(
-              "text-primary-text w-[fit-content] p-1 capitalize",
+              "text-primary-text w-[fit-content] p-2 capitalize",
               pathname == '/' && "text-secondary-bg"
             )}
           >
@@ -42,7 +52,7 @@ const NavMobile: React.FC<props> = ({ active, t, lang }) => {
         <Link href='/about'>
           <a
             className={clsx(
-              "text-primary-text w-[fit-content] p-1 capitalize",
+              "text-primary-text w-[fit-content] p-2 capitalize",
               pathname.startsWith('/about') && "text-secondary-bg"
             )}
           >
@@ -53,14 +63,14 @@ const NavMobile: React.FC<props> = ({ active, t, lang }) => {
         <Link href='/contact'>
           <a
             className={clsx(
-              "text-primary-text w-[fit-content] p-1 capitalize",
+              "text-primary-text w-[fit-content] p-2 capitalize",
               pathname.startsWith('/contact') && "text-secondary-bg"
             )}
           >
             {t('contact')}
           </a>
         </Link>
-       
+
 
       </div>
 
@@ -82,7 +92,6 @@ interface propsNavbar {
 export const Navbar: React.FC<propsNavbar> = ({ logo }) => {
   const { pathname } = useRouter();
   const { t, lang } = useTranslation("nav");
-  console.log(pathname=='/about')
   const [active, setActive] = useState<boolean>(false);
   return (
     <nav className="nav ltr bg-primary-bg ">
@@ -98,7 +107,7 @@ export const Navbar: React.FC<propsNavbar> = ({ logo }) => {
           <Link href='/'>
             <a
               className={clsx(
-                "text-primary-text w-[fit-content] p-1 capitalize",
+                "text-primary-text w-[fit-content] p-2 capitalize",
                 pathname == '/' && "text-secondary-bg"
               )}
             >
@@ -108,7 +117,7 @@ export const Navbar: React.FC<propsNavbar> = ({ logo }) => {
           <Link href='/about'>
             <a
               className={clsx(
-                "text-primary-text w-[fit-content] p-1 capitalize",
+                "text-primary-text w-[fit-content] p-2 capitalize",
                 pathname.startsWith('/about') && "text-secondary-bg"
               )}
             >
@@ -119,7 +128,7 @@ export const Navbar: React.FC<propsNavbar> = ({ logo }) => {
           <Link href='/contact'>
             <a
               className={clsx(
-                "text-primary-text w-[fit-content] p-1 capitalize",
+                "text-primary-text w-[fit-content] p-2 capitalize",
                 pathname.startsWith('/contact') && "text-secondary-bg"
               )}
             >
