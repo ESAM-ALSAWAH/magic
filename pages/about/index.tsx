@@ -12,8 +12,8 @@ const About = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar logo="/images/logo.svg" />
-      <div className="bg-about-us">
-        <div className="container py-20">
+      <div className="bg-about-us overflow-hidden">
+        <div className="container py-20 overflow-hidden">
           <div className="flex flex-row  items-center sm:justify-start  gap-x-2 mb-5" >
 
             <h4 className="titlePage mx-0 lg:mx-[100px]">{t("about_us")}</h4>
