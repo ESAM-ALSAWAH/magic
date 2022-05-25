@@ -10,7 +10,7 @@ import {
   DynamicHero,
   SwiperSection
 } from "@components";
-import { services } from "@constants";
+import { services,realestateLink } from "@constants";
 
 import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
@@ -24,13 +24,7 @@ const hero_Images = [
   "/images/realestate/hero/2.png",
   "/images/specialone/section1/3.png",
 ];
-const Social_Link_Realestate = {
-  facebook: "https://www.facebook.com/Magic.realestate.qa/?ref=pages_you_manage",
-  instagram: "https://www.instagram.com/magic.realestate.qa/",
-  snapchat: "https://www.snapchat.com/add/magicrealestate?share_id=shpUXVVcmWc&locale=en-US",
-  linkedin: "https://www.linkedin.com/company/magic-realestate-qa/about/?viewAsMember=true",
-  twiter: "https://twitter.com/MagicRealEstat1",
-};
+
 const Realestate: NextPage = () => {
   const { t, lang } = useTranslation("realestate");
 
@@ -214,7 +208,7 @@ const Realestate: NextPage = () => {
           <li>{t("why_list_3")}</li>
         </ul>
       </Why_us>
-      <Contact_us t={t} company="Real estate" Social_Link={Social_Link_Realestate} />
+      <Contact_us t={t} company="Real estate" Social_Link={realestateLink} />
       <Footer logo="/images/real_estate_logo.svg" />
     </>
   );
