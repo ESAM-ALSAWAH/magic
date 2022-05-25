@@ -19,8 +19,15 @@ export const DynamicSection: React.FC<props> = ({
   lang,
   id,
 }) => {
+  const handleClick = () => {
+    const top = document.getElementById("to-element")?.nextElementSibling?.getBoundingClientRect().top;
+    window.scrollTo({
+      behavior: "smooth",
+      top: Number(top) * 2,
+    });
+  };
   return (
-    <div className=" relative my-10 overflow-hidden" id={id}>
+    <div className=" relative my-10 overflow-hidden" id={id} >
       <img
         src="/images/shape.svg"
         className={clsx(
@@ -56,7 +63,7 @@ export const DynamicSection: React.FC<props> = ({
           <h4 className="text-[#f8bf58]">{title}</h4>
           <h3 className="text-[#0f1b3e] font-semibold">{title2}</h3>
           <p>{description}</p>
-          <button className="bg-primary-bg text-white font-semibold px-14 py-4 w-fit animation-button">
+          <button className="bg-primary-bg text-white font-semibold px-14 py-4 w-fit animation-button" onClick={handleClick}>
             {button}
           </button>
         </div>

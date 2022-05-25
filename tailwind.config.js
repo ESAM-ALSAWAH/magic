@@ -42,7 +42,7 @@ module.exports = {
       xs: { max: "640px" },
       sm: { min: "640px" },
       md: { min: "768px" },
-      lg: { min: "1024px" },
+      lg: { min: "1024px"},
     },
   },
   plugins: [],

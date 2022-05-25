@@ -44,7 +44,7 @@
 
 .card-home-1>img,
 .card-home-2>img{
-  position: absolute;
+
   inset: 0;
   height: 100%;
 }
@@ -54,6 +54,7 @@
 }
 .card-home-2{
   align-self: flex-end;
+  transition: all .4s ease;
 }
 .card-home-1:hover >.inside-card{
   transition: all .4s ease;

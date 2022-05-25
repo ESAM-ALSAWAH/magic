@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
+import Link from "next/link";
+import { mapLink } from '@constants'
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Link from "next/link";
 export const Contact_us: React.FC<{ t: any, company: string, Social_Link?: any }> = ({ t, company, Social_Link }) => {
   const form = useRef<any>();
   const { facebook, instagram, snapchat, linkedin, twiter } = Social_Link;
@@ -67,7 +68,7 @@ export const Contact_us: React.FC<{ t: any, company: string, Social_Link?: any }
             </a>
           </Link>
           <Link href={facebook} passHref={true}>
-            <a  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="1200">
+            <a data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="1200">
               <img
                 src="/images/icons/facebook.png"
                 alt="facebook"
@@ -126,9 +127,15 @@ export const Contact_us: React.FC<{ t: any, company: string, Social_Link?: any }
                 height={20}
                 loading="lazy"
               />
-              <p>{t("location")} :</p>
+              <Link href={mapLink} passHref={true} target="_blank">
+                <a className="text-[
+                  #0f1b3e] text-lg">
+
+                  Al Sadd Royal Plaza, Doha, Qatar
+                </a>
+              </Link>
             </div>
-            <p>Al Sadd Royal Plaza</p>
+
 
           </div>
         </div>

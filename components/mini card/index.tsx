@@ -21,7 +21,7 @@ export const MiniCard: React.FC<props> = ({ icon, title, index }) => {
         className="m-auto"
         loading="lazy"
       />
-      <p className="text-center">{title}</p>
+      <p className="text-center capitalize">{title}</p>
     </div>
   );
 };

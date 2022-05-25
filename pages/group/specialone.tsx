@@ -46,7 +46,7 @@ const Specialone: NextPage = () => {
       <Navbar logo="/images/special_one_logo.svg" />
       <DynamicHero
         button={t("section1_button")}
-        title="special One"
+        title="Special One"
         title2={t("hero_title2")}
         description={t("hero_description")}
         images={HeroBackground}
@@ -101,7 +101,7 @@ const Specialone: NextPage = () => {
           ))}
         </div>
       </div>
-      <div className="container px-8 flex flex-col md:flex-row md:justify-around ">
+      <div className="container px-8 flex flex-col md:flex-row md:justify-between md:items-center ">
         <div className="flex flex-col">
           <h4 className="text-[#f8bf58]">{t("work_title")}</h4>
           <ul className="list-disc mt-6 text-xl">
@@ -134,7 +134,7 @@ const Specialone: NextPage = () => {
           </SwiperSlide>
         </SwiperImage>
       </div>
-      <div className="container px-4 flex flex-col items-center my-40">
+  {/*     <div className="container px-4 flex flex-col items-center my-40">
         <h3 className="text-[#f8bf58] text-center">{t("Partner_title")}</h3>
         <div className="relative py-8 px-4 shadow-lg my-8 max-w-[800px] m-auto ">
           <div className="p-6 bg-[#fff6e7]">
@@ -142,7 +142,7 @@ const Specialone: NextPage = () => {
           </div>
         </div>
         <img src="/images/shape.svg" alt="shape" loading="lazy" />
-      </div>
+      </div> */}
       <Why_us
         title={t("why_title")}
         title2={t("why_title2")}

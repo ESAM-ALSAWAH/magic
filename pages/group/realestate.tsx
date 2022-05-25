@@ -45,7 +45,7 @@ const Realestate: NextPage = () => {
       <Navbar logo="/images/real_estate_logo.svg" />
       <DynamicHero
         button={t("section1_button")}
-        title="Real estate"
+        title="Real Estate"
         title2={t("hero_title2")}
         description={t("hero_description")}
         images={hero_Images}
@@ -70,7 +70,7 @@ const Realestate: NextPage = () => {
         </div>
       </div>
 
-      <SwiperSection />
+  {/*     <SwiperSection /> */}
 
 
 

@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import { Navbar, Footer } from "@ui";
 import { HeroHome } from '@components'
+import { mapLink} from '@constants'
 import type { NextPage } from "next";
 import emailjs from '@emailjs/browser';
 import Head from "next/head";
@@ -105,19 +106,19 @@ const Home: NextPage = () => {
         <div className="container py-20 px-0 sm:px-6">
           <h2 className="text-white capitalize">{t("our_group")}</h2>
           <div className="ltr flex flex-col py-10 gap-y-10">
-            <div className="card-home-1 relative min-w-[250px] min-h-[250px] max-w-[400px] max-h-[400px] w-[100%] h-[100%] cursor-pointer z-30">
-              <img src="/images/home/realestate.png" alt="card_image" className=" w-[100%] z-20 shadow-lg" />
-              <div className="inside-card bg-white absolute  text-center py-10 top-0 right-0  bottom-0 w-[100%]  -z-10">
+            <div className="m-auto sm:m-0 card-home-1 relative min-w-[250px] min-h-[250px] max-w-[400px] sm:max-h-[400px] w-[100%] h-[100%] cursor-pointer z-30">
+              <img src="/images/home/realestate.png" alt="card_image" className="w-[100%] z-20 shadow-lg relative sm:absolute" />
+              <div className="relative inside-card sm:bg-white sm:absolute  text-center py-10 top-0 right-0  bottom-0 w-[100%]  sm:-z-10">
                 <h5 className="text-[#2747a5]">Magic Real Estate</h5>
-                <p className="text-[#000] text-lg px-2">{t("companie_1")}</p>
+                <p className="text-white sm:text-[#000] text-lg px-0 sm:px-2">{t("companie_1")}</p>
               </div>
 
             </div>
-            <div className="card-home-2 relative min-w-[250px] min-h-[250px] max-w-[400px] max-h-[400px] w-[100%] h-[100%] cursor-pointer z-30 ">
-              <img src="/images/home/specialone-clean.png" alt="card_image" className=" w-[100%] z-20 shadow-lg" />
-              <div className="inside-card bg-white absolute  text-center py-10 top-0 left-0  bottom-0 w-[100%]  -z-10">
+            <div className="m-auto sm:m-0 card-home-2 relative min-w-[250px] min-h-[250px] max-w-[400px] max-h-[400px] w-[100%] h-[100%] cursor-pointer z-30 ">
+              <img src="/images/home/specialone-clean.png" alt="card_image" className="w-[100%] z-20 shadow-lg relative sm:absolute" />
+              <div className="relative inside-card sm:bg-white sm:absolute  text-center py-10 top-0 left-0  bottom-0 w-[100%]  -z-10">
                 <h5 className="text-[#2747a5]">Special One</h5>
-                <p className="text-[#000] text-lg px-2">{t("companie_2")}</p>
+                <p className="text-white sm:text-[#000] text-lg px-0 sm:px-2">{t("companie_2")}</p>
               </div>
 
             </div>
@@ -232,7 +233,7 @@ const Home: NextPage = () => {
                 />
                 <p className="h-[10px] text-2xl">{t("location")}</p>
               </div>
-              <Link href="" passHref={true}>
+              <Link href={mapLink} passHref={true}>
                 <a className="text-white text-2xl">
 
                   Al Sadd Royal Plaza, Doha, Qatar
