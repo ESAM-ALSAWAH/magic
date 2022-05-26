@@ -112,7 +112,7 @@ const Realestate: NextPage = () => {
           <div className="bg-[#fff6e7] py-10  gap-y-10 flex flex-col w-full">
             <div className="flex flex-wrap gap-x-4  justify-center  sm:flex-row sm:gap-x-[220px]  gap-y-10 m-auto w-[90%]">
               <div className="max-w-[25%] min-w-[40%] sm:min-w-[200px] text-center flex flex-col items-center gap-y-4">
-                <div className="grid place-items-center w-full h-full  box-partners bg-white py-11 px-3 text-black">capstone real estate</div>
+                <div className="grid place-items-center w-full h-full  box-partners bg-white py-11 px-3 text-black">{t("partner_1")}</div>
 
                 <div className="relative w-[100px] mt-4 h-[60px] text-white grid items-center ">
                   <img src="/images/rectangle_gold.svg" alt="shape" className=" absolute " />
@@ -120,7 +120,7 @@ const Realestate: NextPage = () => {
                 </div>
               </div>
               <div className="max-w-[25%] min-w-[40%] sm:min-w-[200px] text-center flex flex-col items-center gap-y-4">
-                <div className="grid place-items-center w-full h-full box-partners bg-white py-11 px-3 text-black">Kaizen real estate
+                <div className="grid place-items-center w-full h-full box-partners bg-white py-11 px-3 text-black">{t("partner_2")}
                 </div>
 
                 <div className="relative w-[100px] mt-4 h-[60px] text-white grid items-center ">
@@ -129,7 +129,7 @@ const Realestate: NextPage = () => {
                 </div>
               </div>
               <div className=" max-w-[100%]  sm:min-w-[200px] sm:max-w-[25%] text-center flex flex-col items-center gap-y-4">
-                <div className="grid place-items-center w-full h-full box-partners bg-white py-11 px-3 text-black">Shorek real estate</div>
+                <div className="grid place-items-center w-full h-full box-partners bg-white py-11 px-3 text-black">{t("partner_3")}</div>
 
                 <div className="relative w-[100px] mt-4 h-[60px] text-white grid items-center ">
                   <img src="/images/rectangle_gold.svg" alt="shape" className=" absolute " />
@@ -141,7 +141,7 @@ const Realestate: NextPage = () => {
             </div>
             <div className="flex flex-wrap gap-x-4 justify-center  sm:flex-row sm:gap-x-[120px] gap-y-10 m-auto w-[90%]">
               <div className="max-w-[25%] min-w-[40%] sm:min-w-[200px] text-center flex flex-col items-center gap-y-4">
-                <div className="grid place-items-center w-full h-full box-partners bg-white py-11 px-3 text-black">Debaj real estate</div>
+                <div className="grid place-items-center w-full h-full box-partners bg-white py-11 px-3 text-black">{t("partner_4")}</div>
 
                 <div className="relative w-[100px] mt-4 h-[60px] text-black grid items-center ">
                   <img src="/images/rectangle_white.svg" alt="shape" className=" absolute " />
@@ -149,7 +149,7 @@ const Realestate: NextPage = () => {
                 </div>
               </div>
               <div className="max-w-[25%] min-w-[40%] sm:min-w-[200px] text-center flex flex-col items-center gap-y-4">
-                <div className="grid place-items-center w-full h-full box-partners bg-white py-11 px-3 text-black">Q Finder</div>
+                <div className="grid place-items-center w-full h-full box-partners bg-white py-11 px-3 text-black">{t("partner_5")}</div>
 
                 <div className="relative w-[100px] mt-4 h-[60px] text-black grid items-center ">
                   <img src="/images/rectangle_white.svg" alt="shape" className=" absolute " />
@@ -157,7 +157,7 @@ const Realestate: NextPage = () => {
                 </div>
               </div>
               <div className="max-w-[100%] min-w-[40%] sm:min-w-[200px] text-center flex flex-col items-center gap-y-4">
-                <div className="grid place-items-center w-full h-full box-partners bg-white py-11 px-3 text-black">La luna real estate</div>
+                <div className="grid place-items-center w-full h-full box-partners bg-white py-11 px-3 text-black">{t("partner_6")}</div>
 
                 <div className="relative w-[100px] mt-4 h-[60px] text-black grid items-center ">
                   <img src="/images/rectangle_white.svg" alt="shape" className=" absolute " />
@@ -167,7 +167,7 @@ const Realestate: NextPage = () => {
             </div>
             <div className="flex flex-wrap  gap-x-4 justify-center  sm:flex-row sm:gap-x-[280px] gap-y-10 m-auto w-[90%]">
               <div className="max-w-[25%] min-w-[40%] sm:min-w-[200px] text-center flex flex-col items-center gap-y-4">
-                <div className="grid place-items-center w-full h-full box-partners bg-white py-11 px-3 text-black">Retaj real estate</div>
+                <div className="grid place-items-center w-full h-full box-partners bg-white py-11 px-3 text-black">{t("partner_7")}</div>
 
                 <div className="relative w-[100px] mt-4 h-[60px] text-white grid items-center ">
                   <img src="/images/rectangle_gold.svg" alt="shape" className=" absolute " />
@@ -175,7 +175,7 @@ const Realestate: NextPage = () => {
                 </div>
               </div>
               <div className="max-w-[25%] min-w-[40%] sm:min-w-[200px] text-center flex flex-col items-center gap-y-4">
-                <div className="grid place-items-center w-full h-full box-partners bg-white py-11 px-3 text-black">Square real estate</div>
+                <div className="grid place-items-center w-full h-full box-partners bg-white py-11 px-3 text-black">{t("partner_8")}</div>
 
                 <div className="relative w-[100px] mt-4 h-[60px] text-white grid items-center ">
                   <img src="/images/rectangle_gold.svg" alt="shape" className=" absolute " />
@@ -183,7 +183,7 @@ const Realestate: NextPage = () => {
                 </div>
               </div>
               <div className="  max-w-[100%] min-w-[40%] sm:min-w-[200px] text-center flex flex-col items-center gap-y-4">
-                <div className="grid place-items-center w-full h-full box-partners bg-white py-11 px-3 text-black">Al Ahli group for real estate project</div>
+                <div className="grid place-items-center w-full h-full box-partners bg-white py-11 px-3 text-black">{t("partner_9")}</div>
 
                 <div className="relative w-[100px] mt-4 h-[60px] text-white grid items-center ">
                   <img src="/images/rectangle_gold.svg" alt="shape" className=" absolute " />

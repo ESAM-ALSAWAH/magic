@@ -36,7 +36,7 @@ const FormContact: React.FC<any> = (props) => {
       });
   }
   return (
-    <form ref={form} onSubmit={handleSubmit} className="flex flex-col py-4 px-4 sm:px-8 max-w-[500px] w-[100%] bg-white gap-y-4 m-auto">
+    <form ref={form} onSubmit={handleSubmit} className="flex flex-col py-4 px-4 sm:px-8 max-w-[500px] w-[100%] min-w-full bg-white gap-y-4 m-auto">
       <input name="company" defaultValue={company} className="hidden" />
       <div className="flex flex-col gap-y-2">
         <label htmlFor="Full Name">{t("full_name")}</label>
@@ -148,7 +148,7 @@ const Contact = () => {
             loading="lazy"
             className="order-1 mx-0  sm:mx-4 my-4 sm:mt-5 sm:mb-10 min-w-[87%] "
           />
-          <div className="flex flex-col order-2 sm:order-1">
+          <div className="flex flex-col order-2 sm:order-1 ">
             <div className="m-0 flex items-center justify-around">
               <h5 className="text-[#d8ba71]">{t("contact_specialone")}</h5>
               <img

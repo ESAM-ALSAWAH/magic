@@ -41,7 +41,7 @@ const Home: NextPage = () => {
           <div className="flex flex-col sm:flex-row sm:justify-between items-center my-10 z-10">
             <div className="order-2 sm:order-1 max-w-[500px] w-[100%] sm:w-[50%] h-[fit-content] p-10 shadow-sm   text-white" data-aos="fade-up"
               data-aos-duration="2000">
-              <p className="leading-loose">
+              <p className="leading-loose mt-10 sm:mt-0">
                 {t("about_us_description")}
               </p>
               <Link
