@@ -41,18 +41,18 @@ export const LinkDropdown: React.FC<props> = ({ t, lang }) => {
             {active && (
                 <div
                     className={clsx(
-                        "flex flex-col my-4 sm:my-0 sm:absolute top-14 bg-primary-text shadow-lg cursor-context-menu p-3 min-w-[100%] sm:min-w-[120px] gap-y-4 py-6 language-menu max-h-[200px]  z-20 sm:left-[-40px]",
+                        "flex flex-col my-4 sm:my-0 sm:absolute top-14  bg-transparent sm:bg-primary-text  shadow-lg cursor-context-menu p-3 min-w-[100%] sm:min-w-[120px] gap-y-4 py-6 language-menu max-h-[200px]  z-20 sm:left-[-40px]",
                         lang === "ar" && "rtl"
                     )}
                 >
                     <div
-                        className="font-semibold hover:text-primary-bg cursor-pointer w-[fit-content] ltr"
+                        className="font-semibold text-white sm:text-black sm:hover:text-primary-bg cursor-pointer w-[fit-content] ltr"
 
                     >
                         <Link href='/group/specialone'>Special One</Link>
                     </div>
                     <div
-                        className="font-semibold hover:text-primary-bg cursor-pointer w-[fit-content] ltr"
+                        className="font-semibold text-white sm:text-black sm:hover:text-primary-bg cursor-pointer w-[fit-content] ltr"
 
                     >
                         <Link href='/group/realestate'>Real Estate</Link>
