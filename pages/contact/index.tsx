@@ -184,7 +184,7 @@ const Contact = () => {
               Al Sadd Royal Plaza, Doha, Qatar
               </a>
             </Link>
-            <Link href="mailto:esam@gmail.com" passHref={true}>
+            <Link href="mailto:info@magicgroup.qa" passHref={true}>
               <a className="text-[#d8ba71]">Email: info@magicgroup.qa</a>
             </Link>
           </div>
