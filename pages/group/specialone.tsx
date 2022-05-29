@@ -74,7 +74,7 @@ const Specialone: NextPage = () => {
         <img
           src="/images/shape.svg"
           alt="shape"
-          className="absolute -left-[200px] -bottom-[100px] "
+          className="absolute -left-[200px] -bottom-[120px] "
           style={{ zIndex: -1 }}
           loading="lazy"
         />
