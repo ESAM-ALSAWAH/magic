@@ -22,7 +22,7 @@ const Section1_Images = [
 const hero_Images = [
   "/images/realestate/hero/1.png",
   "/images/realestate/hero/2.png",
-  "/images/specialone/section1/3.png",
+  "/images/realestate/hero/3.png",
 ];
 
 const Realestate: NextPage = () => {
