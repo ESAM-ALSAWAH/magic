@@ -16,7 +16,7 @@ const About = () => {
         <div className="container py-20 overflow-hidden">
           <div className="flex flex-row  items-center sm:justify-start  gap-x-2 mb-5" >
 
-            <h4 className="titlePage mx-auto sm:mx-0 lg:mx-[100px]">{t("about_us")}</h4>
+            <h4 className="titlePage  sm:mx-0 lg:mx-[100px]">{t("about_us")}</h4>
           </div>
           <div className="flex flex-col justify-center sm:flex-row sm:justify-around  items-center mb-[100px]  gap-6 w-[100%] overflow-hidden" data-aos={"fade-right"}
             data-aos-duration="1000">
