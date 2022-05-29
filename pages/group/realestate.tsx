@@ -75,7 +75,7 @@ const Realestate: NextPage = () => {
           </div>
           <div className="flex flex-row justify-center gap-x-10 max-w-[100%] max-h-[250px] items-center overflow-hidden ">
             <img src="/images/realestate/dream2.png" alt="image" className="w-[60%] h-[100%] object-cover" />
-            <img src="/images/realestate/rectangle.png" alt="image" className="w-[25%] h-[50%] object-cover" />
+            <img src="/images/realestate/rectangle.png" alt="image" className="w-[25%] h-[65%] object-cover" />
           </div>
         </div>
         <div className=" flex flex-col gap-y-10 text-[#0f1b3e] justify-center  lg:mx-20 w-[100%]">
