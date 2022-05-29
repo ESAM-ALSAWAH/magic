@@ -34,46 +34,46 @@ export const Footer: React.FC<props> = ({ logo }) => {
               <a>Home</a>
             </Link>
             <Link href="/about">
-              <a>About</a>
+              <a>About us</a>
             </Link>
             <Link href="/contact">
-              <a>Contact</a>
+              <a>Contact us</a>
             </Link>
           </div>
           <div className="flex flex-col items-center sm:items-start gap-y-1 ">
             <h6>Services</h6>
             <Link href="/group/realestate">
-              <a>Real estate</a>
+              <a>Real Estate</a>
             </Link>
             <Link href="/group/specialone">
-              <a>Special one</a>
+              <a>Special One</a>
             </Link>
           </div>
           <div className="flex flex-col items-center sm:items-start gap-y-1">
             <h6>Follow Us</h6>
             <Link href="https://twitter.com/MagicGroup8" passHref={true}>
               <a className="flex flex-row items-center gap-x-3">
-                <AiOutlineTwitter /> twitter
+                <AiOutlineTwitter /> Twitter
               </a>
             </Link>
             <Link href="https://www.facebook.com/Magic.group.qa/?ref=pages_you_manage" passHref={true}>
               <a className="flex flex-row items-center gap-x-3">
-                <AiFillFacebook /> facebook
+                <AiFillFacebook /> Facebook
               </a>
             </Link>
             <Link href="https://www.linkedin.com/company/magic-group-qa/about/?viewAsMember=true" passHref={true}>
               <a className="flex flex-row items-center gap-x-3">
-                <AiFillLinkedin /> Linked In
+                <AiFillLinkedin /> LinkedIn
               </a>
             </Link>
             <Link href="https://www.snapchat.com/add/magicgroup.qa?share_id=zYnEbxA1K0w&locale=en-US" passHref={true}>
               <a className="flex flex-row items-center gap-x-3">
-                <BsSnapchat /> snapchat
+                <BsSnapchat /> Snapchat
               </a>
             </Link>
             <Link href="https://www.instagram.com/magic.group.qar/" passHref={true}>
               <a className="flex flex-row items-center gap-x-3">
-                <AiFillInstagram /> instagram
+                <AiFillInstagram /> Instagram
               </a>
             </Link>
           </div>
