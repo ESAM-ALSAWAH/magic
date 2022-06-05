@@ -31,6 +31,7 @@ const Home: NextPage = () => {
 
         <meta name="description" content={t("meta_description")} />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="PHog8Lis0fDD_F6NuR5oyVusJ6n19q_dp2SKnFZWHjg" />
       </Head>
 
       <Navbar logo="/images/logo.svg" />
